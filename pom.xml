@@ -331,277 +331,53 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 						<configuration>
 							<overlays>
 								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-appcluster-core</artifactId>
+									<groupId>com.semanticcms</groupId>
+									<artifactId>semanticcms-core-model</artifactId>
 									<type>jar</type>
 									<classifier>javadoc</classifier>
-									<targetPath>ao-appcluster/core/apidocs</targetPath>
+									<targetPath>core/model/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-appcluster-csync2</artifactId>
+									<groupId>com.semanticcms</groupId>
+									<artifactId>semanticcms-core-servlet</artifactId>
 									<type>jar</type>
 									<classifier>javadoc</classifier>
-									<targetPath>ao-appcluster/csync2/apidocs</targetPath>
+									<targetPath>core/servlet/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-appcluster-dnsonly</artifactId>
+									<groupId>com.semanticcms</groupId>
+									<artifactId>semanticcms-core-sitemap</artifactId>
 									<type>jar</type>
 									<classifier>javadoc</classifier>
-									<targetPath>ao-appcluster/dnsonly/apidocs</targetPath>
+									<targetPath>core/sitemap/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-appcluster-imap</artifactId>
+									<groupId>com.semanticcms</groupId>
+									<artifactId>semanticcms-core-style</artifactId>
 									<type>jar</type>
 									<classifier>javadoc</classifier>
-									<targetPath>ao-appcluster/imap/apidocs</targetPath>
+									<targetPath>core/style/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-appcluster-jdbc</artifactId>
+									<groupId>com.semanticcms</groupId>
+									<artifactId>semanticcms-core-taglib</artifactId>
 									<type>jar</type>
 									<classifier>javadoc</classifier>
-									<targetPath>ao-appcluster/jdbc/apidocs</targetPath>
+									<targetPath>core/taglib/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-concurrent</artifactId>
+									<groupId>com.semanticcms</groupId>
+									<artifactId>semanticcms-core-theme-base</artifactId>
 									<type>jar</type>
 									<classifier>javadoc</classifier>
-									<targetPath>ao-concurrent/apidocs</targetPath>
+									<targetPath>core/theme-base/apidocs</targetPath>
 								</overlay>
 								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-credit-cards-api</artifactId>
+									<groupId>com.semanticcms</groupId>
+									<artifactId>semanticcms-core-view-content</artifactId>
 									<type>jar</type>
 									<classifier>javadoc</classifier>
-									<targetPath>ao-credit-cards/api/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-credit-cards-authorizeNet</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-credit-cards/authorizeNet/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-credit-cards-payflowPro</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-credit-cards/payflowPro/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-credit-cards-sagePayments</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-credit-cards/sagePayments/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-credit-cards-stripe</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-credit-cards/stripe/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-credit-cards-test</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-credit-cards/test/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-credit-cards-usaepay</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-credit-cards/usaepay/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-cron</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-cron/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-dao-api</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-dao/api/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-dao-base</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-dao/base/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-dao-dbc</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-dao/dbc/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-dbc</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-dbc/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-encoding</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-encoding/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-encoding-servlet</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-encoding/servlet/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-io-buffer</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-io-buffer/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-io-unix</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-io-unix/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-messaging-api</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-messaging/api/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-messaging-base</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-messaging/base/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-messaging-http</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-messaging/http/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-messaging-http-client</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-messaging/http/client/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-messaging-http-servlet</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-messaging/http/servlet/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-messaging-tcp</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-messaging/tcp/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-messaging-tcp-client</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-messaging/tcp/client/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-messaging-tcp-server</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-messaging/tcp/server/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-servlet-filter</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-servlet-filter/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>ao-taglib</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>ao-taglib/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>aocode-public</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>aocode-public/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>aoserv-client</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>aoserv/client/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>aoserv-credit-cards</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>aoserv/credit-cards/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>aoserv-daemon-client</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>aoserv/daemon/client/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>aoweb-framework</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>aoweb-framework/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>aoweb-struts-core</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>aoweb-struts/core/apidocs</targetPath>
-								</overlay>
-								<overlay>
-									<groupId>com.aoindustries</groupId>
-									<artifactId>aoweb-struts-webapp</artifactId>
-									<type>jar</type>
-									<classifier>javadoc</classifier>
-									<targetPath>aoweb-struts/webapp/apidocs</targetPath>
+									<targetPath>core/view-content/apidocs</targetPath>
 								</overlay>
 							</overlays>
 						</configuration>
@@ -627,9 +403,10 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 						<configuration>
 							<path>/</path>
 							<update>true</update>
-							<url>https://www.aoindustries.com/TODO/text</url>
-							<username>TODO</username>
-							<password>TODO</password>
+							<!-- Proxied through aoindustries.com -->
+							<url>https://www.aoindustries.com/f2JTWTxITWyhn14tfs5Zof/text</url>
+							<username>Wh00mHXDkYj0j6hnXc7uY3</username>
+							<password>T38hN0V7vUy1oh4iiaIDmk</password>
 						</configuration>
 					</plugin>
 				</plugins>
