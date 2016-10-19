@@ -8,7 +8,20 @@
 >
 	<jsp:directive.page language="java" pageEncoding="UTF-8" session="false" />
 	<core:page title="SemanticCMS">
+		<core:child book="/all" page="/index.jspx" />
+		<core:child book="/autogit" page="/index.jspx" />
 		<core:child book="/core" page="/index.jspx" />
+		<core:child book="/dia" page="/index.jspx" />
+		<core:child book="/file" page="/index.jspx" />
+		<core:child book="/google-analytics" page="/index.jspx" />
+		<core:child book="/news" page="/index.jspx" />
+		<core:child book="/openfile" page="/index.jspx" />
+		<core:child book="/pagegraph" page="/index.jspx" />
+		<core:child book="/section" page="/index.jspx" />
+		<core:child book="/theme-documentation" page="/index.jspx" />
+		<core:child book="/view-all" page="/index.jspx" />
+		<core:child book="/view-tree" page="/index.jspx" />
+		<core:child book="/view-what-links-here" page="/index.jspx" />
 		<p>
 			Parent POM for all <core:link page="index.jspx" /> packages.
 		</p>
@@ -21,25 +34,20 @@
 		</section:section>
 		<section:section label="Modules">
 			<ul>
-				<!-- TODO
-* [SemanticCMS All](https://semanticcms.com/all/)
-* [SemanticCMS AutoGit](https://semanticcms.com/autogit/)
-				-->
+				<li><core:link book="/all" page="/index.jspx" /></li>
+				<li><core:link book="/autogit" page="/index.jspx" /></li>
 				<li><core:link book="/core" page="/index.jspx" /></li>
-				<!-- TODO
-* [SemanticCMS Core](https://semanticcms.com/core/)
-* [SemanticCMS Dia](https://semanticcms.com/dia/)
-* [SemanticCMS File](https://semanticcms.com/file/)
-* [SemanticCMS Google Analytics](https://semanticcms.com/google-analytics/)
-* [SemanticCMS News](https://semanticcms.com/news/)
-* [SemanticCMS OpenFile](https://semanticcms.com/openfile/)
-* [SemanticCMS PageGraph](https://semanticcms.com/pagegraph/)
-* [SemanticCMS Section](https://semanticcms.com/section/)
-* [SemanticCMS Theme Documentation](https://semanticcms.com/theme-documentation/)
-* [SemanticCMS View All](https://semanticcms.com/view-all/)
-* [SemanticCMS View Tree](https://semanticcms.com/view-tree/)
-* [SemanticCMS View What Links Here](https://semanticcms.com/view-what-links-here/)
-				-->
+				<li><core:link book="/dia" page="/index.jspx" /></li>
+				<li><core:link book="/file" page="/index.jspx" /></li>
+				<li><core:link book="/google-analytics" page="/index.jspx" /></li>
+				<li><core:link book="/news" page="/index.jspx" /></li>
+				<li><core:link book="/openfile" page="/index.jspx" /></li>
+				<li><core:link book="/pagegraph" page="/index.jspx" /></li>
+				<li><core:link book="/section" page="/index.jspx" /></li>
+				<li><core:link book="/theme-documentation" page="/index.jspx" /></li>
+				<li><core:link book="/view-all" page="/index.jspx" /></li>
+				<li><core:link book="/view-tree" page="/index.jspx" /></li>
+				<li><core:link book="/view-what-links-here" page="/index.jspx" /></li>
 			</ul>
 		</section:section>
 	</core:page>

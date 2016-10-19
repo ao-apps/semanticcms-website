@@ -37,3 +37,6 @@
 [submodule "src/main/webapp/view-what-links-here"]
 	path = src/main/webapp/view-what-links-here
 	url = git@github.com:aoindustries/semanticcms-view-what-links-here-book
+[submodule "src/main/webapp/all"]
+	path = src/main/webapp/all
+	url = git@github.com:aoindustries/semanticcms-all-book
