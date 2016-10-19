@@ -39,12 +39,4 @@
 		<dispatcher>REQUEST</dispatcher>
 		<dispatcher>ERROR</dispatcher>
 	</filter-mapping>
-
-	<!-- TODO: Remove once apidocs all redirected -->
-	<welcome-file-list>
-		<welcome-file>index.jspx</welcome-file>
-		<welcome-file>index.jsp</welcome-file>
-		<!-- TODO: For apidocs compatibility, remove once docs integrated the new Maven way -->
-		<welcome-file>index.html</welcome-file>
-	</welcome-file-list>
 </web-app>
