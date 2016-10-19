@@ -1,0 +1,46 @@
+<!-- The root page of the document tree -->
+<jsp:root
+	xmlns:ao="http://aoindustries.com/ao-taglib"
+	xmlns:core="https://semanticcms.com/core/taglib/"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:section="https://semanticcms.com/section/taglib/"
+	version="2.1"
+>
+	<jsp:directive.page language="java" pageEncoding="UTF-8" session="false" />
+	<core:page title="SemanticCMS">
+		<core:child book="/core" page="/index.jspx" />
+		<p>
+			Parent POM for all <core:link page="index.jspx" /> packages.
+		</p>
+		<section:section label="Project Links">
+			<ul>
+				<li><core:link page="index.jspx">Project Home</core:link></li>
+				<li><ao:a href="https://search.maven.org/#search|gav|1|g:%22com.semanticcms%22%20AND%20a:%22semanticcms%22">Maven Central Repository</ao:a></li>
+				<li><ao:a href="https://github.com/aoindustries/semanticcms">GitHub</ao:a></li>
+			</ul>
+		</section:section>
+		<section:section label="Modules">
+			<ul>
+				<!-- TODO
+* [SemanticCMS All](https://semanticcms.com/all/)
+* [SemanticCMS AutoGit](https://semanticcms.com/autogit/)
+				-->
+				<li><core:link book="/core" page="/index.jspx" /></li>
+				<!-- TODO
+* [SemanticCMS Core](https://semanticcms.com/core/)
+* [SemanticCMS Dia](https://semanticcms.com/dia/)
+* [SemanticCMS File](https://semanticcms.com/file/)
+* [SemanticCMS Google Analytics](https://semanticcms.com/google-analytics/)
+* [SemanticCMS News](https://semanticcms.com/news/)
+* [SemanticCMS OpenFile](https://semanticcms.com/openfile/)
+* [SemanticCMS PageGraph](https://semanticcms.com/pagegraph/)
+* [SemanticCMS Section](https://semanticcms.com/section/)
+* [SemanticCMS Theme Documentation](https://semanticcms.com/theme-documentation/)
+* [SemanticCMS View All](https://semanticcms.com/view-all/)
+* [SemanticCMS View Tree](https://semanticcms.com/view-tree/)
+* [SemanticCMS View What Links Here](https://semanticcms.com/view-what-links-here/)
+				-->
+			</ul>
+		</section:section>
+	</core:page>
+</jsp:root>
