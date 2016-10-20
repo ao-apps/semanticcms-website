@@ -367,6 +367,13 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 								</overlay>
 								<overlay>
 									<groupId>com.semanticcms</groupId>
+									<artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId>
+									<type>jar</type>
+									<classifier>javadoc</classifier>
+									<targetPath>core/breadcrumblist-json-ld/apidocs</targetPath>
+								</overlay>
+								<overlay>
+									<groupId>com.semanticcms</groupId>
 									<artifactId>semanticcms-core-model</artifactId>
 									<type>jar</type>
 									<classifier>javadoc</classifier>
@@ -687,6 +694,13 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
+					<artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId>
+					<version>1.0.0-SNAPSHOT</version>
+					<classifier>javadoc</classifier>
+					<scope>provided</scope>
+				</dependency>
+				<dependency>
+					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-core-model</artifactId>
 					<version>1.7.2-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
@@ -981,6 +995,12 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-all</artifactId>
 			<version>1.2.1-SNAPSHOT</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>com.semanticcms</groupId>
+			<artifactId>semanticcms-news-all</artifactId>
+			<version>1.1.1-SNAPSHOT</version>
 			<type>pom</type>
 		</dependency>
 		<dependency>
