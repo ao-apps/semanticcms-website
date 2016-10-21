@@ -24,7 +24,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 	<groupId>com.semanticcms</groupId>
 	<artifactId>website</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<name>semanticcms.com</name>
@@ -61,7 +61,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<!--
 		<url>http://github.com/aoindustries/semanticcms.com</url>
 		-->
-		<tag>website-1.0.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<repositories>
