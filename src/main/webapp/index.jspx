@@ -7,7 +7,11 @@
 	version="2.1"
 >
 	<jsp:directive.page language="java" pageEncoding="UTF-8" session="false" />
-	<core:page title="SemanticCMS">
+	<core:page
+		title="SemanticCMS"
+		datePublished="2016-10-18T19:00:00-0500"
+		dateModified="2016-10-23T23:35:00-0500"
+	>
 		<core:child book="/all" page="/index.jspx" />
 		<core:child book="/autogit" page="/index.jspx" />
 		<core:child book="/core" page="/index.jspx" />
