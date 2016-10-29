@@ -137,7 +137,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 									<artifactId>semanticcms-changelog-taglib</artifactId>
 									<type>jar</type>
 									<classifier>javadoc</classifier>
-									<targetPath>changelog-taglib/apidocs</targetPath>
+									<targetPath>changelog/taglib/apidocs</targetPath>
 								</overlay>
 								<overlay>
 									<groupId>com.semanticcms</groupId>
