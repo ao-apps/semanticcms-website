@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<books
+	xmlns="https://semanticcms.com/core/servlet/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://semanticcms.com/core/servlet/ https://semanticcms.com/core/servlet/books-1.0.xsd"
+	rootBook="/"
+>
+	<book name="/" cvsworkDirectory="~/maven2/ao/semanticcms/src/main/book-filtered" />
+	<book name="/all" cvsworkDirectory="~/maven2/ao/semanticcms/all/src/main/book-filtered">
+		<parent book="/" page="/index.jspx" />
+	</book>
+	<book name="/autogit" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/src/main/book-filtered">
+		<parent book="/" page="/index.jspx" />
+	</book>
+	<book name="/autogit/all" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/all/src/main/book-filtered">
+		<parent book="/autogit" page="/index.jspx" />
+	</book>
+	<book name="/autogit/model" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/model/src/main/book-filtered">
+		<parent book="/autogit" page="/index.jspx" />
+	</book>
+	<book name="/autogit/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/servlet/src/main/book-filtered">
+		<parent book="/autogit" page="/index.jspx" />
+	</book>
+	<book name="/autogit/style" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/style/src/main/book-filtered">
+		<parent book="/autogit" page="/index.jspx" />
+	</book>
+	<book name="/autogit/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/taglib/src/main/book-filtered">
+		<parent book="/autogit" page="/index.jspx" />
+	</book>
+	<book name="/autogit/view" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/view/src/main/book-filtered">
+		<parent book="/autogit" page="/index.jspx" />
+	</book>
+	<book name="/changelog/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/changelog-taglib/src/main/book-filtered">
+		<parent book="/" page="/index.jspx" />
+	</book>
+	<book name="/core" cvsworkDirectory="~/maven2/ao/semanticcms/core/src/main/book-filtered">
+		<parent book="/" page="/index.jspx" />
+	</book>
+	<book name="/core/all" cvsworkDirectory="~/maven2/ao/semanticcms/core/all/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/breadcrumblist-json-ld" cvsworkDirectory="~/maven2/ao/semanticcms/core/breadcrumblist-json-ld/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/canonical" cvsworkDirectory="~/maven2/ao/semanticcms/core/canonical/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/docs" cvsworkDirectory="~/maven2/ao/semanticcms/core/docs/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/model" cvsworkDirectory="~/maven2/ao/semanticcms/core/model/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/servlet/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/sitemap" cvsworkDirectory="~/maven2/ao/semanticcms/core/sitemap/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/style" cvsworkDirectory="~/maven2/ao/semanticcms/core/style/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/core/taglib/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/theme-base" cvsworkDirectory="~/maven2/ao/semanticcms/core/theme-base/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/view-content" cvsworkDirectory="~/maven2/ao/semanticcms/core/view-content/src/main/book-filtered">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/dia" cvsworkDirectory="~/maven2/ao/semanticcms/dia/src/main/book-filtered">
+		<parent book="/" page="/index.jspx" />
+	</book>
+	<book name="/dia/all" cvsworkDirectory="~/maven2/ao/semanticcms/dia/all/src/main/book-filtered">
+		<parent book="/dia" page="/index.jspx" />
+	</book>
+	<book name="/dia/model" cvsworkDirectory="~/maven2/ao/semanticcms/dia/model/src/main/book-filtered">
+		<parent book="/dia" page="/index.jspx" />
+	</book>
+	<book name="/dia/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/dia/servlet/src/main/book-filtered">
+		<parent book="/dia" page="/index.jspx" />
+	</book>
+	<book name="/dia/style" cvsworkDirectory="~/maven2/ao/semanticcms/dia/style/src/main/book-filtered">
+		<parent book="/dia" page="/index.jspx" />
+	</book>
+	<book name="/dia/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/dia/taglib/src/main/book-filtered">
+		<parent book="/dia" page="/index.jspx" />
+	</book>
+	<book name="/dia/view" cvsworkDirectory="~/maven2/ao/semanticcms/dia/view/src/main/book-filtered">
+		<parent book="/dia" page="/index.jspx" />
+	</book>
+	<book name="/file" cvsworkDirectory="~/maven2/ao/semanticcms/file/src/main/book-filtered">
+		<parent book="/" page="/index.jspx" />
+	</book>
+	<book name="/file/all" cvsworkDirectory="~/maven2/ao/semanticcms/file/all/src/main/book-filtered">
+		<parent book="/file" page="/index.jspx" />
+	</book>
+	<book name="/file/model" cvsworkDirectory="~/maven2/ao/semanticcms/file/model/src/main/book-filtered">
+		<parent book="/file" page="/index.jspx" />
+	</book>
+	<book name="/file/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/file/servlet/src/main/book-filtered">
+		<parent book="/file" page="/index.jspx" />
+	</book>
+	<book name="/file/style" cvsworkDirectory="~/maven2/ao/semanticcms/file/style/src/main/book-filtered">
+		<parent book="/file" page="/index.jspx" />
+	</book>
+	<book name="/file/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/file/taglib/src/main/book-filtered">
+		<parent book="/file" page="/index.jspx" />
+	</book>
+	<book name="/file/view" cvsworkDirectory="~/maven2/ao/semanticcms/file/view/src/main/book-filtered">
+		<parent book="/file" page="/index.jspx" />
+	</book>
+	<book name="/google-analytics" cvsworkDirectory="~/maven2/ao/semanticcms/google-analytics/src/main/book-filtered">
+		<parent book="/" page="/index.jspx" />
+	</book>
+	<book name="/news" cvsworkDirectory="~/maven2/ao/semanticcms/news/src/main/book-filtered">
+		<parent book="/" page="/index.jspx" />
+	</book>
+	<book name="/news/all" cvsworkDirectory="~/maven2/ao/semanticcms/news/all/src/main/book-filtered">
+		<parent book="/news" page="/index.jspx" />
+	</book>
+	<book name="/news/model" cvsworkDirectory="~/maven2/ao/semanticcms/news/model/src/main/book-filtered">
+		<parent book="/news" page="/index.jspx" />
+	</book>
+	<book name="/news/rss" cvsworkDirectory="~/maven2/ao/semanticcms/news/rss/src/main/book-filtered">
+		<parent book="/news" page="/index.jspx" />
+	</book>
+	<book name="/news/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/news/servlet/src/main/book-filtered">
+		<parent book="/news" page="/index.jspx" />
+	</book>
+	<book name="/news/style" cvsworkDirectory="~/maven2/ao/semanticcms/news/style/src/main/book-filtered">
+		<parent book="/news" page="/index.jspx" />
+	</book>
+	<book name="/news/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/news/taglib/src/main/book-filtered">
+		<parent book="/news" page="/index.jspx" />
+	</book>
+	<book name="/news/view" cvsworkDirectory="~/maven2/ao/semanticcms/news/view/src/main/book-filtered">
+		<parent book="/news" page="/index.jspx" />
+	</book>
+	<book name="/openfile" cvsworkDirectory="~/maven2/ao/semanticcms/openfile/src/main/book-filtered">
+		<parent book="/" page="/index.jspx" />
+	</book>
+	<book name="/openfile/all" cvsworkDirectory="~/maven2/ao/semanticcms/openfile/all/src/main/book-filtered">
+		<parent book="/openfile" page="/index.jspx" />
+	</book>
+	<book name="/openfile/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/openfile/servlet/src/main/book-filtered">
+		<parent book="/openfile" page="/index.jspx" />
+	</book>
+	<book name="/openfile/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/openfile/taglib/src/main/book-filtered">
+		<parent book="/openfile" page="/index.jspx" />
+	</book>
+	<book name="/pagegraph" cvsworkDirectory="~/maven2/ao/semanticcms/pagegraph/src/main/book-filtered">
+		<parent book="/" page="/index.jspx" />
+	</book>
+	<book name="/section" cvsworkDirectory="~/maven2/ao/semanticcms/section/src/main/book-filtered">
+		<parent book="/" page="/index.jspx" />
+	</book>
+	<book name="/section/all" cvsworkDirectory="~/maven2/ao/semanticcms/section/all/src/main/book-filtered">
+		<parent book="/section" page="/index.jspx" />
+	</book>
+	<book name="/section/model" cvsworkDirectory="~/maven2/ao/semanticcms/section/model/src/main/book-filtered">
+		<parent book="/section" page="/index.jspx" />
+	</book>
+	<book name="/section/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/section/servlet/src/main/book-filtered">
+		<parent book="/section" page="/index.jspx" />
+	</book>
+	<book name="/section/style" cvsworkDirectory="~/maven2/ao/semanticcms/section/style/src/main/book-filtered">
+		<parent book="/section" page="/index.jspx" />
+	</book>
+	<book name="/section/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/section/taglib/src/main/book-filtered">
+		<parent book="/section" page="/index.jspx" />
+	</book>
+	<book name="/theme-documentation" cvsworkDirectory="~/maven2/ao/semanticcms/theme-documentation/src/main/book-filtered">
+		<parent book="/" page="/index.jspx" />
+	</book>
+	<book name="/theme-documentation/style" cvsworkDirectory="~/maven2/ao/semanticcms/theme-documentation-style/src/main/book-filtered">
+		<parent book="/theme-documentation" page="/index.jspx" />
+	</book>
+	<book name="/view-all" cvsworkDirectory="~/maven2/ao/semanticcms/view-all/src/main/book-filtered">
+		<parent book="/" page="/index.jspx" />
+	</book>
+	<book name="/view-tree" cvsworkDirectory="~/maven2/ao/semanticcms/view-tree/src/main/book-filtered">
+		<parent book="/" page="/index.jspx" />
+	</book>
+	<book name="/view-what-links-here" cvsworkDirectory="~/maven2/ao/semanticcms/view-what-links-here/src/main/book-filtered">
+		<parent book="/" page="/index.jspx" />
+	</book>
+</books>
