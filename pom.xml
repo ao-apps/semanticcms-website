@@ -86,7 +86,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 						<configuration>
 							<links>
 								<link>https://docs.oracle.com/javaee/6/api/</link>
-								<link>https://www.aoindustries.com/ao-taglib/apidocs/</link>
+								<link>https://aoindustries.com/ao-taglib/apidocs/</link>
 								<!-- No link for semanticcms-core-all -->
 								<!-- No link for semanticcms-section-all -->
 							</links>
@@ -410,7 +410,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 							<path>/</path>
 							<update>true</update>
 							<!-- Proxied through aoindustries.com -->
-							<url>https://www.aoindustries.com/f2JTWTxITWyhn14tfs5Zof/text</url>
+							<url>https://aoindustries.com/f2JTWTxITWyhn14tfs5Zof/text</url>
 							<username>Wh00mHXDkYj0j6hnXc7uY3</username>
 							<password>T38hN0V7vUy1oh4iiaIDmk</password>
 						</configuration>
