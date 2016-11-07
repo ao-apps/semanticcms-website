@@ -171,6 +171,9 @@
 	<book name="/section/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/section/taglib/src/main/book-filtered">
 		<parent book="/section" page="/index.jspx" />
 	</book>
+	<book name="/tag-reference" cvsworkDirectory="~/maven2/ao/semanticcms/tag-reference/book/src/main/resources-filtered/META-INF/resources/tag-reference">
+		<parent book="/" page="/index.jspx" />
+	</book>
 	<book name="/theme-documentation" cvsworkDirectory="~/maven2/ao/semanticcms/theme-documentation/src/main/book-filtered">
 		<parent book="/" page="/index.jspx" />
 	</book>
