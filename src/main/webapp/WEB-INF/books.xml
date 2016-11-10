@@ -5,188 +5,188 @@
 	xsi:schemaLocation="https://semanticcms.com/core/servlet/ https://semanticcms.com/core/servlet/books-1.0.xsd"
 	rootBook="/"
 >
-	<book name="/" cvsworkDirectory="~/maven2/ao/semanticcms/src/main/book-filtered" />
-	<book name="/all" cvsworkDirectory="~/maven2/ao/semanticcms/all/src/main/book-filtered">
+	<book name="/" cvsworkDirectory="~/maven2/ao/semanticcms/book/src/main/resources-filtered/META-INF/resources" />
+	<book name="/all" cvsworkDirectory="~/maven2/ao/semanticcms/all/book/src/main/resources-filtered/META-INF/resources/all">
 		<parent book="/" page="/index.jspx" />
 	</book>
-	<book name="/autogit" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/src/main/book-filtered">
+	<book name="/autogit" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/book/src/main/resources-filtered/META-INF/resources/autogit">
 		<parent book="/" page="/index.jspx" />
 	</book>
-	<book name="/autogit/all" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/all/src/main/book-filtered">
+	<book name="/autogit/all" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/all/book/src/main/resources-filtered/META-INF/resources/autogit/all">
 		<parent book="/autogit" page="/index.jspx" />
 	</book>
-	<book name="/autogit/model" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/model/src/main/book-filtered">
+	<book name="/autogit/model" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/model/book/src/main/resources-filtered/META-INF/resources/autogit/model">
 		<parent book="/autogit" page="/index.jspx" />
 	</book>
-	<book name="/autogit/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/servlet/src/main/book-filtered">
+	<book name="/autogit/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/servlet/book/src/main/resources-filtered/META-INF/resources/autogit/servlet">
 		<parent book="/autogit" page="/index.jspx" />
 	</book>
-	<book name="/autogit/style" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/style/src/main/book-filtered">
+	<book name="/autogit/style" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/style/book/src/main/resources-filtered/META-INF/resources/autogit/style">
 		<parent book="/autogit" page="/index.jspx" />
 	</book>
-	<book name="/autogit/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/taglib/src/main/book-filtered">
+	<book name="/autogit/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/taglib/book/src/main/resources-filtered/META-INF/resources/autogit/taglib">
 		<parent book="/autogit" page="/index.jspx" />
 	</book>
-	<book name="/autogit/view" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/view/src/main/book-filtered">
+	<book name="/autogit/view" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/view/book/src/main/resources-filtered/META-INF/resources/autogit/view">
 		<parent book="/autogit" page="/index.jspx" />
 	</book>
-	<book name="/changelog/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/changelog-taglib/src/main/book-filtered">
+	<book name="/changelog/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/changelog-taglib/book/src/main/resources-filtered/META-INF/resources/changelog/taglib">
 		<parent book="/" page="/index.jspx" />
 	</book>
-	<book name="/core" cvsworkDirectory="~/maven2/ao/semanticcms/core/src/main/book-filtered">
+	<book name="/core" cvsworkDirectory="~/maven2/ao/semanticcms/core/book/src/main/resources-filtered/META-INF/resources/core">
 		<parent book="/" page="/index.jspx" />
 	</book>
-	<book name="/core/all" cvsworkDirectory="~/maven2/ao/semanticcms/core/all/src/main/book-filtered">
+	<book name="/core/all" cvsworkDirectory="~/maven2/ao/semanticcms/core/all/book/src/main/resources-filtered/META-INF/resources/core/all">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/breadcrumblist-json-ld" cvsworkDirectory="~/maven2/ao/semanticcms/core/breadcrumblist-json-ld/src/main/book-filtered">
+	<book name="/core/breadcrumblist-json-ld" cvsworkDirectory="~/maven2/ao/semanticcms/core/breadcrumblist-json-ld/book/src/main/resources-filtered/META-INF/resources/core/breadcrumblist-json-ls">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/canonical" cvsworkDirectory="~/maven2/ao/semanticcms/core/canonical/src/main/book-filtered">
+	<book name="/core/canonical" cvsworkDirectory="~/maven2/ao/semanticcms/core/canonical/book/src/main/resources-filtered/META-INF/resources/core/canonical">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/docs" cvsworkDirectory="~/maven2/ao/semanticcms/core/docs/src/main/book-filtered">
+	<book name="/core/docs" cvsworkDirectory="~/maven2/ao/semanticcms/core/docs/book/src/main/resources-filtered/META-INF/resources/core/docs">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/model" cvsworkDirectory="~/maven2/ao/semanticcms/core/model/src/main/book-filtered">
+	<book name="/core/model" cvsworkDirectory="~/maven2/ao/semanticcms/core/model/book/src/main/resources-filtered/META-INF/resources/core/model">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/servlet/src/main/book-filtered">
+	<book name="/core/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/servlet/book/src/main/resources-filtered/META-INF/resources/core/servlet">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/sitemap" cvsworkDirectory="~/maven2/ao/semanticcms/core/sitemap/src/main/book-filtered">
+	<book name="/core/sitemap" cvsworkDirectory="~/maven2/ao/semanticcms/core/sitemap/book/src/main/resources-filtered/META-INF/resources/core/sitemap">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/style" cvsworkDirectory="~/maven2/ao/semanticcms/core/style/src/main/book-filtered">
+	<book name="/core/style" cvsworkDirectory="~/maven2/ao/semanticcms/core/style/book/src/main/resources-filtered/META-INF/resources/core/style">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/core/taglib/src/main/book-filtered">
+	<book name="/core/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/core/taglib/book/src/main/resources-filtered/META-INF/resources/core/taglib">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/theme-base" cvsworkDirectory="~/maven2/ao/semanticcms/core/theme-base/src/main/book-filtered">
+	<book name="/core/theme-base" cvsworkDirectory="~/maven2/ao/semanticcms/core/theme-base/book/src/main/resources-filtered/META-INF/resources/core/theme-base">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/view-content" cvsworkDirectory="~/maven2/ao/semanticcms/core/view-content/src/main/book-filtered">
+	<book name="/core/view-content" cvsworkDirectory="~/maven2/ao/semanticcms/core/view-content/book/src/main/resources-filtered/META-INF/resources/core/view-content">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/dia" cvsworkDirectory="~/maven2/ao/semanticcms/dia/src/main/book-filtered">
+	<book name="/dia" cvsworkDirectory="~/maven2/ao/semanticcms/dia/book/src/main/resources-filtered/META-INF/resources/dia">
 		<parent book="/" page="/index.jspx" />
 	</book>
-	<book name="/dia/all" cvsworkDirectory="~/maven2/ao/semanticcms/dia/all/src/main/book-filtered">
+	<book name="/dia/all" cvsworkDirectory="~/maven2/ao/semanticcms/dia/all/book/src/main/resources-filtered/META-INF/resources/dia/all">
 		<parent book="/dia" page="/index.jspx" />
 	</book>
-	<book name="/dia/model" cvsworkDirectory="~/maven2/ao/semanticcms/dia/model/src/main/book-filtered">
+	<book name="/dia/model" cvsworkDirectory="~/maven2/ao/semanticcms/dia/model/book/src/main/resources-filtered/META-INF/resources/dia/model">
 		<parent book="/dia" page="/index.jspx" />
 	</book>
-	<book name="/dia/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/dia/servlet/src/main/book-filtered">
+	<book name="/dia/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/dia/servlet/book/src/main/resources-filtered/META-INF/resources/dia/servlet">
 		<parent book="/dia" page="/index.jspx" />
 	</book>
-	<book name="/dia/style" cvsworkDirectory="~/maven2/ao/semanticcms/dia/style/src/main/book-filtered">
+	<book name="/dia/style" cvsworkDirectory="~/maven2/ao/semanticcms/dia/style/book/src/main/resources-filtered/META-INF/resources/dia/style">
 		<parent book="/dia" page="/index.jspx" />
 	</book>
-	<book name="/dia/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/dia/taglib/src/main/book-filtered">
+	<book name="/dia/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/dia/taglib/book/src/main/resources-filtered/META-INF/resources/dia/taglib">
 		<parent book="/dia" page="/index.jspx" />
 	</book>
-	<book name="/dia/view" cvsworkDirectory="~/maven2/ao/semanticcms/dia/view/src/main/book-filtered">
+	<book name="/dia/view" cvsworkDirectory="~/maven2/ao/semanticcms/dia/view/book/src/main/resources-filtered/META-INF/resources/dia/view">
 		<parent book="/dia" page="/index.jspx" />
 	</book>
-	<book name="/file" cvsworkDirectory="~/maven2/ao/semanticcms/file/src/main/book-filtered">
+	<book name="/file" cvsworkDirectory="~/maven2/ao/semanticcms/file/book/src/main/resources-filtered/META-INF/resources/file">
 		<parent book="/" page="/index.jspx" />
 	</book>
-	<book name="/file/all" cvsworkDirectory="~/maven2/ao/semanticcms/file/all/src/main/book-filtered">
+	<book name="/file/all" cvsworkDirectory="~/maven2/ao/semanticcms/file/all/book/src/main/resources-filtered/META-INF/resources/file/all">
 		<parent book="/file" page="/index.jspx" />
 	</book>
-	<book name="/file/model" cvsworkDirectory="~/maven2/ao/semanticcms/file/model/src/main/book-filtered">
+	<book name="/file/model" cvsworkDirectory="~/maven2/ao/semanticcms/file/model/book/src/main/resources-filtered/META-INF/resources/file/model">
 		<parent book="/file" page="/index.jspx" />
 	</book>
-	<book name="/file/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/file/servlet/src/main/book-filtered">
+	<book name="/file/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/file/servlet/book/src/main/resources-filtered/META-INF/resources/file/servlet">
 		<parent book="/file" page="/index.jspx" />
 	</book>
-	<book name="/file/style" cvsworkDirectory="~/maven2/ao/semanticcms/file/style/src/main/book-filtered">
+	<book name="/file/style" cvsworkDirectory="~/maven2/ao/semanticcms/file/style/book/src/main/resources-filtered/META-INF/resources/file/style">
 		<parent book="/file" page="/index.jspx" />
 	</book>
-	<book name="/file/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/file/taglib/src/main/book-filtered">
+	<book name="/file/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/file/taglib/book/src/main/resources-filtered/META-INF/resources/file/taglib">
 		<parent book="/file" page="/index.jspx" />
 	</book>
-	<book name="/file/view" cvsworkDirectory="~/maven2/ao/semanticcms/file/view/src/main/book-filtered">
+	<book name="/file/view" cvsworkDirectory="~/maven2/ao/semanticcms/file/view/book/src/main/resources-filtered/META-INF/resources/file/view">
 		<parent book="/file" page="/index.jspx" />
 	</book>
-	<book name="/google-analytics" cvsworkDirectory="~/maven2/ao/semanticcms/google-analytics/src/main/book-filtered">
+	<book name="/google-analytics" cvsworkDirectory="~/maven2/ao/semanticcms/google-analytics/book/src/main/resources-filtered/META-INF/resources/google-analytics">
 		<parent book="/" page="/index.jspx" />
 	</book>
-	<book name="/news" cvsworkDirectory="~/maven2/ao/semanticcms/news/src/main/book-filtered">
+	<book name="/news" cvsworkDirectory="~/maven2/ao/semanticcms/news/book/src/main/resources-filtered/META-INF/resources/news">
 		<parent book="/" page="/index.jspx" />
 	</book>
-	<book name="/news/all" cvsworkDirectory="~/maven2/ao/semanticcms/news/all/src/main/book-filtered">
+	<book name="/news/all" cvsworkDirectory="~/maven2/ao/semanticcms/news/all/book/src/main/resources-filtered/META-INF/resources/news/all">
 		<parent book="/news" page="/index.jspx" />
 	</book>
-	<book name="/news/model" cvsworkDirectory="~/maven2/ao/semanticcms/news/model/src/main/book-filtered">
+	<book name="/news/model" cvsworkDirectory="~/maven2/ao/semanticcms/news/model/book/src/main/resources-filtered/META-INF/resources/news/model">
 		<parent book="/news" page="/index.jspx" />
 	</book>
-	<book name="/news/rss" cvsworkDirectory="~/maven2/ao/semanticcms/news/rss/src/main/book-filtered">
+	<book name="/news/rss" cvsworkDirectory="~/maven2/ao/semanticcms/news/rss/book/src/main/resources-filtered/META-INF/resources/news/rss">
 		<parent book="/news" page="/index.jspx" />
 	</book>
-	<book name="/news/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/news/servlet/src/main/book-filtered">
+	<book name="/news/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/news/servlet/book/src/main/resources-filtered/META-INF/resources/news/servlet">
 		<parent book="/news" page="/index.jspx" />
 	</book>
-	<book name="/news/style" cvsworkDirectory="~/maven2/ao/semanticcms/news/style/src/main/book-filtered">
+	<book name="/news/style" cvsworkDirectory="~/maven2/ao/semanticcms/news/style/book/src/main/resources-filtered/META-INF/resources/news/style">
 		<parent book="/news" page="/index.jspx" />
 	</book>
-	<book name="/news/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/news/taglib/src/main/book-filtered">
+	<book name="/news/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/news/taglib/book/src/main/resources-filtered/META-INF/resources/news/taglib">
 		<parent book="/news" page="/index.jspx" />
 	</book>
-	<book name="/news/view" cvsworkDirectory="~/maven2/ao/semanticcms/news/view/src/main/book-filtered">
+	<book name="/news/view" cvsworkDirectory="~/maven2/ao/semanticcms/news/view/book/src/main/resources-filtered/META-INF/resources/news/view">
 		<parent book="/news" page="/index.jspx" />
 	</book>
-	<book name="/openfile" cvsworkDirectory="~/maven2/ao/semanticcms/openfile/src/main/book-filtered">
+	<book name="/openfile" cvsworkDirectory="~/maven2/ao/semanticcms/openfile/book/src/main/resources-filtered/META-INF/resources/openfile">
 		<parent book="/" page="/index.jspx" />
 	</book>
-	<book name="/openfile/all" cvsworkDirectory="~/maven2/ao/semanticcms/openfile/all/src/main/book-filtered">
+	<book name="/openfile/all" cvsworkDirectory="~/maven2/ao/semanticcms/openfile/all/book/src/main/resources-filtered/META-INF/resources/openfile/all">
 		<parent book="/openfile" page="/index.jspx" />
 	</book>
-	<book name="/openfile/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/openfile/servlet/src/main/book-filtered">
+	<book name="/openfile/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/openfile/servlet/book/src/main/resources-filtered/META-INF/resources/openfile/servlet">
 		<parent book="/openfile" page="/index.jspx" />
 	</book>
-	<book name="/openfile/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/openfile/taglib/src/main/book-filtered">
+	<book name="/openfile/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/openfile/taglib/book/src/main/resources-filtered/META-INF/resources/openfile/taglib">
 		<parent book="/openfile" page="/index.jspx" />
 	</book>
-	<book name="/pagegraph" cvsworkDirectory="~/maven2/ao/semanticcms/pagegraph/src/main/book-filtered">
+	<book name="/pagegraph" cvsworkDirectory="~/maven2/ao/semanticcms/pagegraph/book/src/main/resources-filtered/META-INF/resources/openfile/pagegraph">
 		<parent book="/" page="/index.jspx" />
 	</book>
-	<book name="/section" cvsworkDirectory="~/maven2/ao/semanticcms/section/src/main/book-filtered">
+	<book name="/section" cvsworkDirectory="~/maven2/ao/semanticcms/section/book/src/main/resources-filtered/META-INF/resources/section">
 		<parent book="/" page="/index.jspx" />
 	</book>
-	<book name="/section/all" cvsworkDirectory="~/maven2/ao/semanticcms/section/all/src/main/book-filtered">
+	<book name="/section/all" cvsworkDirectory="~/maven2/ao/semanticcms/section/all/book/src/main/resources-filtered/META-INF/resources/section/all">
 		<parent book="/section" page="/index.jspx" />
 	</book>
-	<book name="/section/model" cvsworkDirectory="~/maven2/ao/semanticcms/section/model/src/main/book-filtered">
+	<book name="/section/model" cvsworkDirectory="~/maven2/ao/semanticcms/section/model/book/src/main/resources-filtered/META-INF/resources/section/model">
 		<parent book="/section" page="/index.jspx" />
 	</book>
-	<book name="/section/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/section/servlet/src/main/book-filtered">
+	<book name="/section/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/section/servlet/book/src/main/resources-filtered/META-INF/resources/section/servlet">
 		<parent book="/section" page="/index.jspx" />
 	</book>
-	<book name="/section/style" cvsworkDirectory="~/maven2/ao/semanticcms/section/style/src/main/book-filtered">
+	<book name="/section/style" cvsworkDirectory="~/maven2/ao/semanticcms/section/style/book/src/main/resources-filtered/META-INF/resources/section/style">
 		<parent book="/section" page="/index.jspx" />
 	</book>
-	<book name="/section/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/section/taglib/src/main/book-filtered">
+	<book name="/section/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/section/taglib/book/src/main/resources-filtered/META-INF/resources/section/taglib">
 		<parent book="/section" page="/index.jspx" />
 	</book>
 	<book name="/tag-reference" cvsworkDirectory="~/maven2/ao/semanticcms/tag-reference/book/src/main/resources-filtered/META-INF/resources/tag-reference">
 		<parent book="/" page="/index.jspx" />
 	</book>
-	<book name="/theme-documentation" cvsworkDirectory="~/maven2/ao/semanticcms/theme-documentation/src/main/book-filtered">
+	<book name="/theme-documentation" cvsworkDirectory="~/maven2/ao/semanticcms/theme-documentation/book/src/main/resources-filtered/META-INF/resources/theme-documentation">
 		<parent book="/" page="/index.jspx" />
 	</book>
-	<book name="/theme-documentation/style" cvsworkDirectory="~/maven2/ao/semanticcms/theme-documentation-style/src/main/book-filtered">
+	<book name="/theme-documentation/style" cvsworkDirectory="~/maven2/ao/semanticcms/theme-documentation-style/book/src/main/resources-filtered/META-INF/resources/theme-documentation/style">
 		<parent book="/theme-documentation" page="/index.jspx" />
 	</book>
-	<book name="/view-all" cvsworkDirectory="~/maven2/ao/semanticcms/view-all/src/main/book-filtered">
+	<book name="/view-all" cvsworkDirectory="~/maven2/ao/semanticcms/view-all/book/src/main/resources-filtered/META-INF/resources/view-all">
 		<parent book="/" page="/index.jspx" />
 	</book>
-	<book name="/view-tree" cvsworkDirectory="~/maven2/ao/semanticcms/view-tree/src/main/book-filtered">
+	<book name="/view-tree" cvsworkDirectory="~/maven2/ao/semanticcms/view-tree/book/src/main/resources-filtered/META-INF/resources/view-tree">
 		<parent book="/" page="/index.jspx" />
 	</book>
-	<book name="/view-what-links-here" cvsworkDirectory="~/maven2/ao/semanticcms/view-what-links-here/src/main/book-filtered">
+	<book name="/view-what-links-here" cvsworkDirectory="~/maven2/ao/semanticcms/view-what-links-here/book/src/main/resources-filtered/META-INF/resources/view-what-links-here">
 		<parent book="/" page="/index.jspx" />
 	</book>
 </books>
