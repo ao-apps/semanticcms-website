@@ -16,7 +16,7 @@
             <activatedProfiles>
                 <activatedProfile>skip-war</activatedProfile>
                 <activatedProfile>development</activatedProfile>
-                <activatedProfile>release</activatedProfile>
+                
             </activatedProfiles>
         </action>
         <action>

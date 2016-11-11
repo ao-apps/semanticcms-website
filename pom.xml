@@ -825,395 +825,283 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<!-- Dependencies for book content -->
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms</artifactId>
+			<artifactId>semanticcms-book</artifactId>
 			<version>1.5.1-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-all</artifactId>
+			<artifactId>semanticcms-all-book</artifactId>
 			<version>1.3.1-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-autogit</artifactId>
+			<artifactId>semanticcms-autogit-book</artifactId>
 			<version>1.3.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-autogit-all</artifactId>
+			<artifactId>semanticcms-autogit-all-book</artifactId>
 			<version>1.2.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-autogit-model</artifactId>
+			<artifactId>semanticcms-autogit-model-book</artifactId>
 			<version>1.4.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-autogit-servlet</artifactId>
+			<artifactId>semanticcms-autogit-servlet-book</artifactId>
 			<version>1.3.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-autogit-style</artifactId>
+			<artifactId>semanticcms-autogit-style-book</artifactId>
 			<version>1.3.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-autogit-taglib</artifactId>
+			<artifactId>semanticcms-autogit-taglib-book</artifactId>
 			<version>1.3.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-autogit-view</artifactId>
+			<artifactId>semanticcms-autogit-view-book</artifactId>
 			<version>1.3.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-changelog-taglib</artifactId>
+			<artifactId>semanticcms-changelog-taglib-book</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core</artifactId>
+			<artifactId>semanticcms-core-book</artifactId>
 			<version>1.5.1-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-all</artifactId>
+			<artifactId>semanticcms-core-all-book</artifactId>
 			<version>1.3.1-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId>
+			<artifactId>semanticcms-core-breadcrumblist-json-ld-book</artifactId>
 			<version>1.0.1-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-canonical</artifactId>
+			<artifactId>semanticcms-core-canonical-book</artifactId>
 			<version>1.0.1-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-docs</artifactId>
+			<artifactId>semanticcms-core-docs-book</artifactId>
 			<version>1.4.1-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-model</artifactId>
+			<artifactId>semanticcms-core-model-book</artifactId>
 			<version>1.8.1-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-servlet</artifactId>
+			<artifactId>semanticcms-core-servlet-book</artifactId>
 			<version>1.10.0-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-sitemap</artifactId>
+			<artifactId>semanticcms-core-sitemap-book</artifactId>
 			<version>1.9.1-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-style</artifactId>
+			<artifactId>semanticcms-core-style-book</artifactId>
 			<version>1.3.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-taglib</artifactId>
+			<artifactId>semanticcms-core-taglib-book</artifactId>
 			<version>1.8.1-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-theme-base</artifactId>
+			<artifactId>semanticcms-core-theme-base-book</artifactId>
 			<version>1.2.1-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-view-content</artifactId>
+			<artifactId>semanticcms-core-view-content-book</artifactId>
 			<version>1.4.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-dia</artifactId>
+			<artifactId>semanticcms-dia-book</artifactId>
 			<version>1.3.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-dia-all</artifactId>
+			<artifactId>semanticcms-dia-all-book</artifactId>
 			<version>1.2.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-dia-model</artifactId>
+			<artifactId>semanticcms-dia-model-book</artifactId>
 			<version>1.4.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-dia-servlet</artifactId>
+			<artifactId>semanticcms-dia-servlet-book</artifactId>
 			<version>1.4.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-dia-style</artifactId>
+			<artifactId>semanticcms-dia-style-book</artifactId>
 			<version>1.3.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-dia-taglib</artifactId>
+			<artifactId>semanticcms-dia-taglib-book</artifactId>
 			<version>1.4.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-dia-view</artifactId>
+			<artifactId>semanticcms-dia-view-book</artifactId>
 			<version>1.4.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-file</artifactId>
+			<artifactId>semanticcms-file-book</artifactId>
 			<version>1.3.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-file-all</artifactId>
+			<artifactId>semanticcms-file-all-book</artifactId>
 			<version>1.2.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-file-model</artifactId>
+			<artifactId>semanticcms-file-model-book</artifactId>
 			<version>1.4.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-file-servlet</artifactId>
+			<artifactId>semanticcms-file-servlet-book</artifactId>
 			<version>1.5.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-file-style</artifactId>
+			<artifactId>semanticcms-file-style-book</artifactId>
 			<version>1.3.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-file-taglib</artifactId>
+			<artifactId>semanticcms-file-taglib-book</artifactId>
 			<version>1.5.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-file-view</artifactId>
+			<artifactId>semanticcms-file-view-book</artifactId>
 			<version>1.4.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-google-analytics</artifactId>
+			<artifactId>semanticcms-google-analytics-book</artifactId>
 			<version>1.0.1-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news</artifactId>
+			<artifactId>semanticcms-news-book</artifactId>
 			<version>1.1.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news-all</artifactId>
+			<artifactId>semanticcms-news-all-book</artifactId>
 			<version>1.1.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news-model</artifactId>
+			<artifactId>semanticcms-news-model-book</artifactId>
 			<version>1.1.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news-rss</artifactId>
+			<artifactId>semanticcms-news-rss-book</artifactId>
 			<version>1.1.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news-servlet</artifactId>
+			<artifactId>semanticcms-news-servlet-book</artifactId>
 			<version>1.1.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news-style</artifactId>
+			<artifactId>semanticcms-news-style-book</artifactId>
 			<version>1.1.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news-taglib</artifactId>
+			<artifactId>semanticcms-news-taglib-book</artifactId>
 			<version>1.1.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news-view</artifactId>
+			<artifactId>semanticcms-news-view-book</artifactId>
 			<version>1.1.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-openfile</artifactId>
+			<artifactId>semanticcms-openfile-book</artifactId>
 			<version>1.3.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-openfile-all</artifactId>
+			<artifactId>semanticcms-openfile-all-book</artifactId>
 			<version>1.2.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-openfile-servlet</artifactId>
+			<artifactId>semanticcms-openfile-servlet-book</artifactId>
 			<version>1.5.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-openfile-taglib</artifactId>
+			<artifactId>semanticcms-openfile-taglib-book</artifactId>
 			<version>1.5.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-pagegraph</artifactId>
+			<artifactId>semanticcms-pagegraph-book</artifactId>
 			<version>1.3.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-section</artifactId>
+			<artifactId>semanticcms-section-book</artifactId>
 			<version>1.3.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-section-all</artifactId>
+			<artifactId>semanticcms-section-all-book</artifactId>
 			<version>1.2.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-section-model</artifactId>
+			<artifactId>semanticcms-section-model-book</artifactId>
 			<version>1.4.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-section-servlet</artifactId>
+			<artifactId>semanticcms-section-servlet-book</artifactId>
 			<version>1.4.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-section-style</artifactId>
+			<artifactId>semanticcms-section-style-book</artifactId>
 			<version>1.4.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-section-taglib</artifactId>
+			<artifactId>semanticcms-section-taglib-book</artifactId>
 			<version>1.4.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -1222,38 +1110,28 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-theme-documentation</artifactId>
+			<artifactId>semanticcms-theme-documentation-book</artifactId>
 			<version>1.6.1-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-theme-documentation-style</artifactId>
+			<artifactId>semanticcms-theme-documentation-style-book</artifactId>
 			<version>1.5.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-view-all</artifactId>
+			<artifactId>semanticcms-view-all-book</artifactId>
 			<version>1.4.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-view-tree</artifactId>
+			<artifactId>semanticcms-view-tree-book</artifactId>
 			<version>1.4.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-view-what-links-here</artifactId>
+			<artifactId>semanticcms-view-what-links-here-book</artifactId>
 			<version>1.4.2-SNAPSHOT</version>
-			<classifier>book</classifier>
-			<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 		</dependency>
 	</dependencies>
 </project>
