@@ -39,13 +39,4 @@
 		<dispatcher>REQUEST</dispatcher>
 		<dispatcher>ERROR</dispatcher>
 	</filter-mapping>
-
- 	<mime-mapping>
-		<extension>tld</extension>
-		<mime-type>text/xml</mime-type>
-	</mime-mapping>
-	<mime-mapping>
-		<extension>xsd</extension>
-		<mime-type>text/xml</mime-type>
-	</mime-mapping>
 </web-app>
