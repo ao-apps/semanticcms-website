@@ -39,7 +39,7 @@
 	<book name="/core/all" cvsworkDirectory="~/maven2/ao/semanticcms/core/all/book/src/main/resources-filtered/META-INF/resources/core/all">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/breadcrumblist-json-ld" cvsworkDirectory="~/maven2/ao/semanticcms/core/breadcrumblist-json-ld/book/src/main/resources-filtered/META-INF/resources/core/breadcrumblist-json-ls">
+	<book name="/core/breadcrumblist-json-ld" cvsworkDirectory="~/maven2/ao/semanticcms/core/breadcrumblist-json-ld/book/src/main/resources-filtered/META-INF/resources/core/breadcrumblist-json-ld">
 		<parent book="/core" page="/index.jspx" />
 	</book>
 	<book name="/core/canonical" cvsworkDirectory="~/maven2/ao/semanticcms/core/canonical/book/src/main/resources-filtered/META-INF/resources/core/canonical">
@@ -150,7 +150,10 @@
 	<book name="/openfile/taglib" cvsworkDirectory="~/maven2/ao/semanticcms/openfile/taglib/book/src/main/resources-filtered/META-INF/resources/openfile/taglib">
 		<parent book="/openfile" page="/index.jspx" />
 	</book>
-	<book name="/pagegraph" cvsworkDirectory="~/maven2/ao/semanticcms/pagegraph/book/src/main/resources-filtered/META-INF/resources/openfile/pagegraph">
+	<book name="/pagegraph" cvsworkDirectory="~/maven2/ao/semanticcms/pagegraph/book/src/main/resources-filtered/META-INF/resources/pagegraph">
+		<parent book="/" page="/index.jspx" />
+	</book>
+	<book name="/parent" cvsworkDirectory="~/maven2/ao/semanticcms/parent/book/src/main/resources-filtered/META-INF/resources/parent">
 		<parent book="/" page="/index.jspx" />
 	</book>
 	<book name="/section" cvsworkDirectory="~/maven2/ao/semanticcms/section/book/src/main/resources-filtered/META-INF/resources/section">

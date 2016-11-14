@@ -18,7 +18,6 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 	<modelVersion>4.0.0</modelVersion>
 
 	<prerequisites>
-		<!-- 3.2.1 required for wildcard exclusions -->
 		<!-- 3.3.1 required for extensions.xml -->
 		<maven>3.3.1</maven>
 	</prerequisites>
@@ -81,18 +80,6 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 			<build>
 				<pluginManagement>
 					<plugins>
-						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-javadoc-plugin</artifactId>
-							<configuration>
-								<links>
-									<link>https://docs.oracle.com/javaee/6/api/</link>
-									<link>https://aoindustries.com/ao-taglib/apidocs/</link>
-									<!-- No link for semanticcms-core-all -->
-									<!-- No link for semanticcms-section-all -->
-								</links>
-							</configuration>
-						</plugin>
 						<plugin>
 							<groupId>org.apache.maven.plugins</groupId>
 							<artifactId>maven-war-plugin</artifactId>
@@ -1072,6 +1059,11 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-pagegraph-book</artifactId>
 			<version>1.3.2-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.semanticcms</groupId>
+			<artifactId>semanticcms-parent-book</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
