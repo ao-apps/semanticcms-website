@@ -465,7 +465,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId>
-					<version>1.0.1</version>
+					<version>1.0.2-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -682,21 +682,21 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-section-style</artifactId>
-					<version>1.4.2</version>
+					<version>1.4.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-section-taglib</artifactId>
-					<version>1.4.2</version>
+					<version>1.4.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-tag-reference</artifactId>
-					<version>1.0.0</version>
+					<version>1.0.1-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -872,7 +872,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-breadcrumblist-json-ld-book</artifactId>
-			<version>1.0.1</version>
+			<version>1.0.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -1087,17 +1087,17 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-section-style-book</artifactId>
-			<version>1.4.2</version>
+			<version>1.4.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-section-taglib-book</artifactId>
-			<version>1.4.2</version>
+			<version>1.4.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-tag-reference-book</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
