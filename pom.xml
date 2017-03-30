@@ -69,7 +69,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-openfile-all</artifactId>
-					<version>1.2.2</version>
+					<version>1.2.3-SNAPSHOT</version>
 					<type>pom</type>
 				</dependency>
 			</dependencies>
@@ -423,14 +423,14 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-autogit-model</artifactId>
-					<version>1.4.2</version>
+					<version>1.4.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-autogit-servlet</artifactId>
-					<version>1.3.2</version>
+					<version>1.3.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -444,14 +444,14 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-autogit-taglib</artifactId>
-					<version>1.3.2</version>
+					<version>1.3.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-autogit-view</artifactId>
-					<version>1.3.2</version>
+					<version>1.3.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -472,14 +472,14 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-core-canonical</artifactId>
-					<version>1.0.1</version>
+					<version>1.0.2-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-core-model</artifactId>
-					<version>1.8.1</version>
+					<version>1.8.2-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -493,77 +493,77 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-core-sitemap</artifactId>
-					<version>1.9.1</version>
+					<version>1.9.2-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-core-style</artifactId>
-					<version>1.3.2</version>
+					<version>1.3.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-core-taglib</artifactId>
-					<version>1.8.1</version>
+					<version>1.8.2-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-core-theme-base</artifactId>
-					<version>1.2.1</version>
+					<version>1.2.2-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-core-view-content</artifactId>
-					<version>1.4.2</version>
+					<version>1.4.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-dia-model</artifactId>
-					<version>1.4.2</version>
+					<version>1.4.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-dia-servlet</artifactId>
-					<version>1.4.2</version>
+					<version>1.4.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-dia-style</artifactId>
-					<version>1.3.2</version>
+					<version>1.3.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-dia-taglib</artifactId>
-					<version>1.4.2</version>
+					<version>1.4.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-dia-view</artifactId>
-					<version>1.4.2</version>
+					<version>1.4.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-file-model</artifactId>
-					<version>1.4.2</version>
+					<version>1.4.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -577,7 +577,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-file-style</artifactId>
-					<version>1.3.2</version>
+					<version>1.3.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -605,7 +605,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-news-model</artifactId>
-					<version>1.1.2</version>
+					<version>1.1.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -619,56 +619,56 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-news-servlet</artifactId>
-					<version>1.1.2</version>
+					<version>1.1.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-news-style</artifactId>
-					<version>1.1.2</version>
+					<version>1.1.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-news-taglib</artifactId>
-					<version>1.1.2</version>
+					<version>1.1.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-news-view</artifactId>
-					<version>1.1.2</version>
+					<version>1.1.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-openfile-servlet</artifactId>
-					<version>1.5.2</version>
+					<version>1.5.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-openfile-taglib</artifactId>
-					<version>1.5.2</version>
+					<version>1.5.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-pagegraph</artifactId>
-					<version>1.3.2</version>
+					<version>1.3.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-section-model</artifactId>
-					<version>1.4.2</version>
+					<version>1.4.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -710,21 +710,21 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-view-all</artifactId>
-					<version>1.4.2</version>
+					<version>1.4.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-view-tree</artifactId>
-					<version>1.4.2</version>
+					<version>1.4.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-view-what-links-here</artifactId>
-					<version>1.4.2</version>
+					<version>1.4.3-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -812,7 +812,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-book</artifactId>
-			<version>1.5.1</version>
+			<version>1.5.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -822,7 +822,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-autogit-book</artifactId>
-			<version>1.3.2</version>
+			<version>1.3.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -832,12 +832,12 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-autogit-model-book</artifactId>
-			<version>1.4.2</version>
+			<version>1.4.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-autogit-servlet-book</artifactId>
-			<version>1.3.2</version>
+			<version>1.3.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -847,12 +847,12 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-autogit-taglib-book</artifactId>
-			<version>1.3.2</version>
+			<version>1.3.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-autogit-view-book</artifactId>
-			<version>1.3.2</version>
+			<version>1.3.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -862,7 +862,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-book</artifactId>
-			<version>1.5.1</version>
+			<version>1.5.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -877,7 +877,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-canonical-book</artifactId>
-			<version>1.0.1</version>
+			<version>1.0.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -887,7 +887,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-model-book</artifactId>
-			<version>1.8.1</version>
+			<version>1.8.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -897,32 +897,32 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-sitemap-book</artifactId>
-			<version>1.9.1</version>
+			<version>1.9.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-style-book</artifactId>
-			<version>1.3.2</version>
+			<version>1.3.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-taglib-book</artifactId>
-			<version>1.8.1</version>
+			<version>1.8.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-theme-base-book</artifactId>
-			<version>1.2.1</version>
+			<version>1.2.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-view-content-book</artifactId>
-			<version>1.4.2</version>
+			<version>1.4.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-dia-book</artifactId>
-			<version>1.3.2</version>
+			<version>1.3.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -932,7 +932,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-dia-model-book</artifactId>
-			<version>1.4.2</version>
+			<version>1.4.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -942,22 +942,22 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-dia-style-book</artifactId>
-			<version>1.3.2</version>
+			<version>1.3.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-dia-taglib-book</artifactId>
-			<version>1.4.2</version>
+			<version>1.4.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-dia-view-book</artifactId>
-			<version>1.4.2</version>
+			<version>1.4.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-file-book</artifactId>
-			<version>1.3.2</version>
+			<version>1.3.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -967,7 +967,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-file-model-book</artifactId>
-			<version>1.4.2</version>
+			<version>1.4.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -977,7 +977,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-file-style-book</artifactId>
-			<version>1.3.2</version>
+			<version>1.3.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -997,7 +997,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-news-book</artifactId>
-			<version>1.1.2</version>
+			<version>1.1.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -1007,7 +1007,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-news-model-book</artifactId>
-			<version>1.1.2</version>
+			<version>1.1.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -1017,47 +1017,47 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-news-servlet-book</artifactId>
-			<version>1.1.2</version>
+			<version>1.1.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-news-style-book</artifactId>
-			<version>1.1.2</version>
+			<version>1.1.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-news-taglib-book</artifactId>
-			<version>1.1.2</version>
+			<version>1.1.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-news-view-book</artifactId>
-			<version>1.1.2</version>
+			<version>1.1.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-openfile-book</artifactId>
-			<version>1.3.2</version>
+			<version>1.3.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-openfile-all-book</artifactId>
-			<version>1.2.2</version>
+			<version>1.2.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-openfile-servlet-book</artifactId>
-			<version>1.5.2</version>
+			<version>1.5.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-openfile-taglib-book</artifactId>
-			<version>1.5.2</version>
+			<version>1.5.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-pagegraph-book</artifactId>
-			<version>1.3.2</version>
+			<version>1.3.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -1067,7 +1067,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-section-book</artifactId>
-			<version>1.3.2</version>
+			<version>1.3.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -1077,7 +1077,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-section-model-book</artifactId>
-			<version>1.4.2</version>
+			<version>1.4.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -1112,17 +1112,17 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-view-all-book</artifactId>
-			<version>1.4.2</version>
+			<version>1.4.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-view-tree-book</artifactId>
-			<version>1.4.2</version>
+			<version>1.4.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-view-what-links-here-book</artifactId>
-			<version>1.4.2</version>
+			<version>1.4.3-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
