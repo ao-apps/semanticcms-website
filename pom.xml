@@ -689,7 +689,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-section-taglib</artifactId>
-					<version>1.4.3-SNAPSHOT</version>
+					<version>1.4.3</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
