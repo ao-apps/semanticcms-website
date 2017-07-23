@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-semanticcms.com - https://semanticcms.com/
+semanticcms-website - The semanticcms.com website.
 Copyright (C) 2016, 2017  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
 
-This file is part of semanticcms.com.
+This file is part of semanticcms-website.
 
-semanticcms.com is non-exclusive, non-transferable, non-redistributable.
+semanticcms-website is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-semanticcms.com is distributed in the hope that it will be useful,
+semanticcms-website is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<prerequisites>
-		<!-- 3.3.1 required for extensions.xml -->
-		<maven>3.3.1</maven>
-	</prerequisites>
-
 	<parent>
-		<groupId>com.aoindustries</groupId>
-		<artifactId>ao-private-parent</artifactId>
-		<version>1.0.2-SNAPSHOT</version>
-		<relativePath>../ao-private-parent/pom.xml</relativePath>
+		<groupId>org.aorepo</groupId>
+		<artifactId>aorepo-parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../../aorepo/parent/pom.xml</relativePath>
 	</parent>
 
 	<groupId>com.semanticcms</groupId>
@@ -34,33 +36,23 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 	<version>1.0.3-SNAPSHOT</version>
 	<packaging>war</packaging>
 
+	<properties>
+		<javadoc.breadcrumbs><![CDATA[<a target="_top" href="https://semanticcms.com/">SemanticCMS</a>]]></javadoc.breadcrumbs>
+		<shortTitle />
+		<google.analytics.trackingId>UA-86870445-1</google.analytics.trackingId>
+	</properties>
+
 	<name>semanticcms.com</name>
 	<url>https://semanticcms.com/</url>
-	<description>https://semanticcms.com/</description>
+	<description>The semanticcms.com website.</description>
 	<inceptionYear>2016</inceptionYear>
 
 	<scm>
-		<!--<connection>scm:git:git://github.com/aoindustries/semanticcms.com.git</connection>-->
-		<developerConnection>scm:git:ssh://private.cvs.aoindustries.com/var/git/semanticcms.com</developerConnection>
-		<!--<url>https://github.com/aoindustries/semanticcms.com</url>-->
+		<connection>scm:git:git://github.com/aoindustries/semanticcms-website.git</connection>
+		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms-website.git</developerConnection>
+		<url>https://github.com/aoindustries/semanticcms-website</url>
 		<tag>HEAD</tag>
 	</scm>
-
-	<repositories>
-		<!-- Repository required here, too, so can find parent -->
-		<repository>
-			<id>aoprivate-repository</id>
-			<url>scpexe://private.cvs.aoindustries.com/var/maven2/aoprivate</url>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>daily</updatePolicy>
-			</snapshots>
-		</repository>
-	</repositories>
 
 	<profiles>
 		<!-- Features only enabled during development time -->
