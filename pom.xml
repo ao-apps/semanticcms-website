@@ -57,6 +57,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 			</releases>
 			<snapshots>
 				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
 			</snapshots>
 		</repository>
 	</repositories>
