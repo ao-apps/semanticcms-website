@@ -402,12 +402,10 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 							<artifactId>tomcat7-maven-plugin</artifactId>
 							<version>2.2</version>
 							<configuration>
+								<server>semanticcms.com</server>
 								<path>/</path>
 								<update>true</update>
-								<!-- Proxied through aoindustries.com -->
-								<url>https://aoindustries.com/f2JTWTxITWyhn14tfs5Zof/text</url>
-								<username>Wh00mHXDkYj0j6hnXc7uY3</username>
-								<password>T38hN0V7vUy1oh4iiaIDmk</password>
+								<url>https://semanticcms.com/ibMqVKsCwt53rtuuEv1dDF/text</url>
 							</configuration>
 						</plugin>
 					</plugins>
