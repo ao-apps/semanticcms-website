@@ -396,6 +396,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 							<artifactId>tomcat7-maven-plugin</artifactId>
 							<version>2.2</version>
 							<configuration>
+								<charset>UTF-8</charset>
 								<server>semanticcms.com</server>
 								<!-- Parallel deployment -->
 								<path>/ROOT##${maven.build.timestamp}-${project.version}</path>
