@@ -27,7 +27,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<parent>
 		<groupId>org.aorepo</groupId>
 		<artifactId>aorepo-parent</artifactId>
-		<version>1.0.0</version>
+		<version>1.0.1-SNAPSHOT</version>
 		<relativePath>../../aorepo/parent/pom.xml</relativePath>
 	</parent>
 
