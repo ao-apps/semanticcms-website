@@ -41,7 +41,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<shortTitle />
 		<google.analytics.trackingId>UA-86871646-2</google.analytics.trackingId>
 		<!-- Parallel deployment -->
-		<maven.build.timestamp.format>yyyyMMdd.HHmmss</maven.build.timestamp.format>
+		<!-- Unreliable with current hack: <maven.build.timestamp.format>yyyyMMdd.HHmmss</maven.build.timestamp.format> -->
 	</properties>
 
 	<name>SemanticCMS Website</name>
@@ -399,7 +399,10 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 								<charset>UTF-8</charset>
 								<server>semanticcms.com</server>
 								<!-- Parallel deployment -->
+								<!-- Unreliable with current hack:
 								<path>/ROOT##${maven.build.timestamp}-${project.version}</path>
+								-->
+								<path>/</path>
 								<update>true</update>
 								<url>https://semanticcms.com/ibMqVKsCwt53rtuuEv1dDF/text</url>
 							</configuration>
