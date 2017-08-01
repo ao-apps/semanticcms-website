@@ -73,6 +73,15 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<book name="/core/model" cvsworkDirectory="~/maven2/ao/semanticcms/core/model/book/src/main/resources-filtered/META-INF/resources/core/model">
 		<parent book="/core" page="/index.jspx" />
 	</book>
+	<book name="/core/repository" cvsworkDirectory="~/maven2/ao/semanticcms/core/repository/book/src/main/resources-filtered/META-INF/resources/core/repository">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/repository/local" cvsworkDirectory="~/maven2/ao/semanticcms/core/repository-local/book/src/main/resources-filtered/META-INF/resources/core/repository/local">
+		<parent book="/core/repository" page="/index.jspx" />
+	</book>
+	<book name="/core/repository/missing" cvsworkDirectory="~/maven2/ao/semanticcms/core/repository-missing/book/src/main/resources-filtered/META-INF/resources/core/repository/missing">
+		<parent book="/core/repository" page="/index.jspx" />
+	</book>
 	<book name="/core/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/servlet/book/src/main/resources-filtered/META-INF/resources/core/servlet">
 		<parent book="/core" page="/index.jspx" />
 	</book>
