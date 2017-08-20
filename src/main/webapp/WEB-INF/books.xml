@@ -73,14 +73,17 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<book name="/core/model" cvsworkDirectory="~/maven2/ao/semanticcms/core/model/book/src/main/resources-filtered/META-INF/resources/core/model">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/repository" cvsworkDirectory="~/maven2/ao/semanticcms/core/repository/book/src/main/resources-filtered/META-INF/resources/core/repository">
+	<book name="/core/pages" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages/book/src/main/resources-filtered/META-INF/resources/core/pages">
 		<parent book="/core" page="/index.jspx" />
 	</book>
-	<book name="/core/repository/local" cvsworkDirectory="~/maven2/ao/semanticcms/core/repository-local/book/src/main/resources-filtered/META-INF/resources/core/repository/local">
-		<parent book="/core/repository" page="/index.jspx" />
+	<book name="/core/pages/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages-servlet/book/src/main/resources-filtered/META-INF/resources/core/pages/servlet">
+		<parent book="/core/pages" page="/index.jspx" />
 	</book>
-	<book name="/core/repository/missing" cvsworkDirectory="~/maven2/ao/semanticcms/core/repository-missing/book/src/main/resources-filtered/META-INF/resources/core/repository/missing">
-		<parent book="/core/repository" page="/index.jspx" />
+	<book name="/core/resources" cvsworkDirectory="~/maven2/ao/semanticcms/core/resources/book/src/main/resources-filtered/META-INF/resources/core/resources">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/resources/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/resources-servlet/book/src/main/resources-filtered/META-INF/resources/core/resources/servlet">
+		<parent book="/core/resources" page="/index.jspx" />
 	</book>
 	<book name="/core/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/servlet/book/src/main/resources-filtered/META-INF/resources/core/servlet">
 		<parent book="/core" page="/index.jspx" />
@@ -184,8 +187,32 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<book name="/pagegraph" cvsworkDirectory="~/maven2/ao/semanticcms/pagegraph/book/src/main/resources-filtered/META-INF/resources/pagegraph">
 		<parent book="/" page="/index.jspx" />
 	</book>
+	<book name="/pages" cvsworkDirectory="~/maven2/ao/semanticcms/pages/book/src/main/resources-filtered/META-INF/resources/pages">
+		<parent book="/" page="/index.jspx" />
+	</book>
+	<book name="/pages/all" cvsworkDirectory="~/maven2/ao/semanticcms/pages/all/book/src/main/resources-filtered/META-INF/resources/pages/all">
+		<parent book="/pages" page="/index.jspx" />
+	</book>
+	<book name="/pages/missing" cvsworkDirectory="~/maven2/ao/semanticcms/pages/missing/book/src/main/resources-filtered/META-INF/resources/pages/missing">
+		<parent book="/pages" page="/index.jspx" />
+	</book>
 	<book name="/parent" cvsworkDirectory="~/maven2/ao/semanticcms/parent/book/src/main/resources-filtered/META-INF/resources/parent">
 		<parent book="/" page="/index.jspx" />
+	</book>
+	<book name="/resources" cvsworkDirectory="~/maven2/ao/semanticcms/resources/book/src/main/resources-filtered/META-INF/resources/resources">
+		<parent book="/" page="/index.jspx" />
+	</book>
+	<book name="/resources/all" cvsworkDirectory="~/maven2/ao/semanticcms/resources/all/book/src/main/resources-filtered/META-INF/resources/resources/all">
+		<parent book="/resources" page="/index.jspx" />
+	</book>
+	<book name="/resources/empty" cvsworkDirectory="~/maven2/ao/semanticcms/resources/empty/book/src/main/resources-filtered/META-INF/resources/resources/empty">
+		<parent book="/resources" page="/index.jspx" />
+	</book>
+	<book name="/resources/filesystem" cvsworkDirectory="~/maven2/ao/semanticcms/resources/filesystem/book/src/main/resources-filtered/META-INF/resources/resources/filesystem">
+		<parent book="/resources" page="/index.jspx" />
+	</book>
+	<book name="/resources/union" cvsworkDirectory="~/maven2/ao/semanticcms/resources/union/book/src/main/resources-filtered/META-INF/resources/resources/union">
+		<parent book="/resources" page="/index.jspx" />
 	</book>
 	<book name="/section" cvsworkDirectory="~/maven2/ao/semanticcms/section/book/src/main/resources-filtered/META-INF/resources/section">
 		<parent book="/" page="/index.jspx" />
