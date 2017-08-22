@@ -76,7 +76,16 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<book name="/core/pages" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages/book/src/main/resources-filtered/META-INF/resources/core/pages">
 		<parent book="/core" page="/index.jspx" />
 	</book>
+	<book name="/core/pages/jsp" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages-jsp/book/src/main/resources-filtered/META-INF/resources/core/pages/jsp">
+		<parent book="/core/pages" page="/index.jspx" />
+	</book>
+	<book name="/core/pages/jspx" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages-jspx/book/src/main/resources-filtered/META-INF/resources/core/pages/jspx">
+		<parent book="/core/pages" page="/index.jspx" />
+	</book>
 	<book name="/core/pages/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages-servlet/book/src/main/resources-filtered/META-INF/resources/core/pages/servlet">
+		<parent book="/core/pages" page="/index.jspx" />
+	</book>
+	<book name="/core/pages/union" cvsworkDirectory="~/maven2/ao/semanticcms/core/pages-union/book/src/main/resources-filtered/META-INF/resources/core/pages/union">
 		<parent book="/core/pages" page="/index.jspx" />
 	</book>
 	<book name="/core/resources" cvsworkDirectory="~/maven2/ao/semanticcms/core/resources/book/src/main/resources-filtered/META-INF/resources/core/resources">
