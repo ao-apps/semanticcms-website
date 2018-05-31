@@ -568,7 +568,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-autogit-model</artifactId>
-					<version>1.4.3</version>
+					<version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -953,7 +953,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				<dependency>
 					<groupId>com.semanticcms</groupId>
 					<artifactId>semanticcms-section-model</artifactId>
-					<version>1.4.3</version>
+					<version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -1118,7 +1118,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-theme-documentation-style</artifactId>
-			<version>1.5.4-validation-SNAPSHOT</version>
+			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<!-- Dependencies for book content -->
 		<dependency>
@@ -1144,7 +1144,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-autogit-model-book</artifactId>
-			<version>1.4.4-validation-SNAPSHOT</version>
+			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -1509,7 +1509,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-section-model-book</artifactId>
-			<version>1.4.4-validation-SNAPSHOT</version>
+			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
@@ -1544,7 +1544,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-theme-documentation-style-book</artifactId>
-			<version>1.5.4-validation-SNAPSHOT</version>
+			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
