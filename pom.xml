@@ -25,15 +25,11 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.aorepo</groupId>
-		<artifactId>aorepo-parent</artifactId>
-		<version>1.1.0-SNAPSHOT</version>
+		<groupId>org.aorepo</groupId><artifactId>aorepo-parent</artifactId><version>1.1.0-SNAPSHOT</version>
 		<relativePath>../../aorepo/parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.semanticcms</groupId>
-	<artifactId>website</artifactId>
-	<version>2.0.0-SNAPSHOT</version>
+	<groupId>com.semanticcms</groupId><artifactId>website</artifactId><version>2.0.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<properties>
@@ -62,9 +58,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 			<id>development</id>
 			<dependencies>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-openfile-all</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-all</artifactId><version>2.0.0-SNAPSHOT</version>
 					<type>pom</type>
 				</dependency>
 			</dependencies>
@@ -75,461 +69,395 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				<pluginManagement>
 					<plugins>
 						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-war-plugin</artifactId>
+							<groupId>org.apache.maven.plugins</groupId><artifactId>maven-war-plugin</artifactId>
 							<configuration>
 								<overlays>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-autogit-model</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-model</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>autogit/model/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-autogit-servlet</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-servlet</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>autogit/servlet/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-autogit-style</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-style</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>autogit/style/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-autogit-taglib</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-taglib</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>autogit/taglib/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-autogit-view</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-view</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>autogit/view/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-changelog-taglib</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>changelog/taglib/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/breadcrumblist-json-ld/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-canonical</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-canonical</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/canonical/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-controller</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-controller</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/controller/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-model</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/model/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-pages</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/pages/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-pages-jsp</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jsp</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/pages/jsp/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-pages-jspx</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/pages/jspx/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-pages-local</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-local</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/pages/local/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-pages-servlet</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-servlet</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/pages/servlet/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-pages-union</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-union</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/pages/union/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-renderer</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/renderer/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-renderer-html</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/renderer/html/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-renderer-servlet</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-servlet</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/renderer/servlet/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-resources</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/resources/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-resources-servlet</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources-servlet</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/resources/servlet/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-servlet</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/servlet/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-sitemap</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/sitemap/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-style</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/style/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-taglib</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/taglib/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-theme-base</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/theme-base/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-core-view-content</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>core/view-content/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-dia-model</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-model</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>dia/model/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-dia-renderer-html</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-renderer-html</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>dia/renderer/html/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-dia-servlet</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-servlet</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>dia/servlet/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-dia-style</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-style</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>dia/style/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-dia-taglib</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-taglib</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>dia/taglib/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-dia-view</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-view</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>dia/view/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-file-model</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-model</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>file/model/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-file-renderer-html</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-renderer-html</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>file/renderer/html/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-file-servlet</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-servlet</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>file/servlet/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-file-style</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-style</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>file/style/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-file-taglib</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-taglib</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>file/taglib/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-file-view</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-view</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>file/view/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-google-analytics</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-google-analytics</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>google-analytics/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-news-model</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-model</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>news/model/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-news-renderer-html</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-renderer-html</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>news/renderer/html/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-news-rss</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-rss</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>news/rss/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-news-servlet</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-servlet</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>news/servlet/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-news-style</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-style</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>news/style/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-news-taglib</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-taglib</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>news/taglib/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-news-view</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-view</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>news/view/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-openfile-servlet</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-servlet</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>openfile/servlet/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-openfile-taglib</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-taglib</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>openfile/taglib/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-pagegraph</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-pagegraph</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>pagegraph/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-pages-unavailable</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-pages-unavailable</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>pages/missing/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-resources-empty</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-empty</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>resources/empty/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-resources-filesystem</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-filesystem</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>resources/filesystem/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-resources-unavailable</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-unavailable</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>resources/unavailable/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-resources-union</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-union</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>resources/union/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-section-model</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-model</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>section/model/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-section-renderer-html</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-renderer-html</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>section/renderer/html/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-section-servlet</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-servlet</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>section/servlet/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-section-style</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-style</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>section/style/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-section-taglib</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-taglib</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>section/taglib/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-tag-reference</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-tag-reference</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>tag-reference/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-theme-documentation</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>theme-documentation/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-view-all</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-all</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>view-all/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-view-tree</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-tree</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>view-tree/apidocs</targetPath>
 									</overlay>
 									<overlay>
-										<groupId>com.semanticcms</groupId>
-										<artifactId>semanticcms-view-what-links-here</artifactId>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-what-links-here</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
 										<targetPath>view-what-links-here/apidocs</targetPath>
@@ -538,8 +466,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 							</configuration>
 						</plugin>
 						<plugin>
-							<groupId>org.apache.tomcat.maven</groupId>
-							<artifactId>tomcat7-maven-plugin</artifactId>
+							<groupId>org.apache.tomcat.maven</groupId><artifactId>tomcat7-maven-plugin</artifactId>
 							<configuration>
 								<charset>UTF-8</charset>
 								<server>semanticcms.com</server>
@@ -558,463 +485,331 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 			<dependencies>
 				<!-- Only include Google Analytics on production releases to not pollute with dev data -->
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-google-analytics</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-google-analytics</artifactId><version>2.0.0-SNAPSHOT</version>
 				</dependency>
 				<!-- Dependencies for javadocs -->
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-autogit-model</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-model</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-autogit-servlet</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-servlet</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-autogit-style</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-style</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-autogit-taglib</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-taglib</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-autogit-view</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-view</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-changelog-taglib</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-canonical</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-canonical</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-controller</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-controller</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-model</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-pages</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-pages-jsp</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jsp</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-pages-jspx</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-pages-local</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-local</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-pages-servlet</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-servlet</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-pages-union</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-union</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-renderer</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-renderer-html</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-renderer-servlet</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-servlet</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-resources</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-resources-servlet</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources-servlet</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-servlet</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-sitemap</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-style</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-taglib</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-theme-base</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-core-view-content</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-dia-model</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-model</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-dia-renderer-html</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-renderer-html</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-dia-servlet</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-servlet</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-dia-style</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-style</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-dia-taglib</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-taglib</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-dia-view</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-view</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-file-model</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-model</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-file-renderer-html</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-renderer-html</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-file-servlet</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-servlet</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-file-style</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-style</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-file-taglib</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-taglib</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-file-view</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-view</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-google-analytics</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-google-analytics</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-news-model</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-model</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-news-renderer-html</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-renderer-html</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-news-rss</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-rss</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-news-servlet</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-servlet</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-news-style</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-style</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-news-taglib</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-taglib</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-news-view</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-view</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-openfile-servlet</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-servlet</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-openfile-taglib</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-taglib</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-pagegraph</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-pagegraph</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-pages-unavailable</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-pages-unavailable</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-resources-empty</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-empty</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-resources-filesystem</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-filesystem</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-resources-unavailable</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-unavailable</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-resources-union</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-union</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-section-model</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-model</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-section-renderer-html</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-renderer-html</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-section-servlet</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-servlet</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-section-style</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-style</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-section-taglib</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-taglib</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-tag-reference</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-tag-reference</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-theme-documentation</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-view-all</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-all</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-view-tree</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-tree</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId>
-					<artifactId>semanticcms-view-what-links-here</artifactId>
-					<version>2.0.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-what-links-here</artifactId><version>2.0.0-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -1025,539 +820,332 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>com.semanticcms</groupId>
-				<artifactId>semanticcms-core-controller</artifactId>
-				<version>2.0.0-SNAPSHOT</version>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-controller</artifactId><version>2.0.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>com.semanticcms</groupId>
-				<artifactId>semanticcms-core-taglib</artifactId>
-				<version>2.0.0-SNAPSHOT</version>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib</artifactId><version>2.0.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>com.semanticcms</groupId>
-				<artifactId>semanticcms-tag-reference</artifactId>
-				<version>2.0.0-SNAPSHOT</version>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-tag-reference</artifactId><version>2.0.0-SNAPSHOT</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
 	<dependencies>
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.0.1</version>
+			<groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId><version>3.0.1</version>
 			<scope>provided</scope>
 		</dependency>
 		<!-- JSTL: See http://stackoverflow.com/questions/6094329/tomcat-7-and-jstl -->
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
+			<groupId>javax.servlet</groupId><artifactId>jstl</artifactId><version>1.2</version>
 		</dependency>
 		<dependency>
-			<groupId>javax.servlet.jsp</groupId>
-			<artifactId>javax.servlet.jsp-api</artifactId>
-			<version>2.2.1</version>
+			<groupId>javax.servlet.jsp</groupId><artifactId>javax.servlet.jsp-api</artifactId><version>2.2.1</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.glassfish.web</groupId>
-			<artifactId>jstl-impl</artifactId>
-			<version>1.2</version>
+			<groupId>org.glassfish.web</groupId><artifactId>jstl-impl</artifactId><version>1.2</version>
 			<exclusions>
 				<exclusion>
-					<groupId>javax.servlet</groupId>
-					<artifactId>servlet-api</artifactId>
+					<groupId>javax.servlet</groupId><artifactId>servlet-api</artifactId>
 				</exclusion>
 				<exclusion>
-					<groupId>javax.servlet.jsp</groupId>
-					<artifactId>jsp-api</artifactId>
+					<groupId>javax.servlet.jsp</groupId><artifactId>jsp-api</artifactId>
 				</exclusion>
 				<exclusion>
-					<groupId>javax.servlet.jsp.jstl</groupId>
-					<artifactId>jstl-api</artifactId>
+					<groupId>javax.servlet.jsp.jstl</groupId><artifactId>jstl-api</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>com.aoindustries</groupId>
-			<artifactId>ao-taglib</artifactId>
-			<version>3.0.0-SNAPSHOT</version>
+			<groupId>com.aoindustries</groupId><artifactId>ao-taglib</artifactId><version>3.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-changelog-taglib</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-all</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><version>2.0.0-SNAPSHOT</version>
 			<type>pom</type>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news-all</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all</artifactId><version>2.0.0-SNAPSHOT</version>
 			<type>pom</type>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-section-all</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all</artifactId><version>2.0.0-SNAPSHOT</version>
 			<type>pom</type>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-theme-documentation</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-theme-documentation-style</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation-style</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<!-- Dependencies for book content -->
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-all-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-all-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-autogit-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-autogit-all-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-all-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-autogit-model-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-model-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-autogit-servlet-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-servlet-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-autogit-style-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-style-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-autogit-taglib-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-taglib-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-autogit-view-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-view-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-changelog-taglib-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-all-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-breadcrumblist-json-ld-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-breadcrumblist-json-ld-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-canonical-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-canonical-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-controller-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-controller-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-docs-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-docs-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-model-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-pages-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-pages-jsp-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jsp-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-pages-jspx-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-pages-local-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-local-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-pages-servlet-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-servlet-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-pages-union-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-union-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-renderer-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-renderer-html-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-renderer-servlet-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-servlet-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-resources-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-resources-servlet-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources-servlet-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-servlet-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-sitemap-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-style-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-taglib-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-theme-base-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-view-content-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-dia-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-dia-all-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-all-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-dia-model-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-model-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-dia-renderer-html-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-renderer-html-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-dia-servlet-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-servlet-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-dia-style-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-style-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-dia-taglib-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-taglib-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-dia-view-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-view-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-file-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-file-all-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-all-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-file-model-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-model-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-file-renderer-html-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-renderer-html-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-file-servlet-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-servlet-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-file-style-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-style-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-file-taglib-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-taglib-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-file-view-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-view-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-google-analytics-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-google-analytics-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news-all-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news-model-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-model-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news-renderer-html-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-renderer-html-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news-rss-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-rss-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news-servlet-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-servlet-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news-style-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-style-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news-taglib-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-taglib-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-news-view-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-view-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-openfile-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-openfile-all-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-all-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-openfile-servlet-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-servlet-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-openfile-taglib-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-taglib-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-pagegraph-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-pagegraph-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-pages-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-pages-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-pages-all-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-pages-all-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-pages-unavailable-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-pages-unavailable-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-parent-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-parent-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-resources-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-resources-all-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-all-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-resources-empty-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-empty-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-resources-filesystem-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-filesystem-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-resources-unavailable-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-unavailable-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-resources-union-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-union-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-section-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-section-all-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-section-model-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-model-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-section-renderer-html-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-renderer-html-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-section-servlet-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-servlet-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-section-style-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-style-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-section-taglib-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-taglib-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-tag-reference-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-tag-reference-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-theme-documentation-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-theme-documentation-style-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation-style-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-view-all-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-all-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-view-tree-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-tree-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-view-what-links-here-book</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-what-links-here-book</artifactId><version>2.0.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
