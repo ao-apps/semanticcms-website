@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 semanticcms-website - The semanticcms.com website.
-Copyright (C) 2016, 2017, 2019  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2018, 2019  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -25,7 +25,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.aorepo</groupId><artifactId>aorepo-parent</artifactId><version>1.0.1-SNAPSHOT</version>
+		<groupId>org.aorepo</groupId><artifactId>aorepo-parent</artifactId><version>1.1.0-SNAPSHOT</version>
 		<relativePath>../../aorepo/parent/pom.xml</relativePath>
 	</parent>
 
@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<shortTitle />
 		<google.analytics.trackingId>UA-86871646-2</google.analytics.trackingId>
 		<!-- Parallel deployment -->
-		<maven.build.timestamp.format>yyyyMMdd.HHmmss</maven.build.timestamp.format>
+		<!-- Unreliable with current hack: <maven.build.timestamp.format>yyyyMMdd.HHmmss</maven.build.timestamp.format> -->
 	</properties>
 
 	<name>SemanticCMS 1 Website</name>
@@ -69,7 +69,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				<pluginManagement>
 					<plugins>
 						<plugin>
-							<groupId>org.apache.maven.plugins</groupId><artifactId>maven-war-plugin</artifactId><version>3.1.0</version>
+							<groupId>org.apache.maven.plugins</groupId><artifactId>maven-war-plugin</artifactId>
 							<configuration>
 								<overlays>
 									<overlay>
@@ -340,12 +340,15 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 							</configuration>
 						</plugin>
 						<plugin>
-							<groupId>org.apache.tomcat.maven</groupId><artifactId>tomcat7-maven-plugin</artifactId><version>2.2</version>
+							<groupId>org.apache.tomcat.maven</groupId><artifactId>tomcat7-maven-plugin</artifactId>
 							<configuration>
 								<charset>UTF-8</charset>
 								<server>semanticcms.com</server>
 								<!-- Parallel deployment -->
+								<!-- Unreliable with current hack:
 								<path>/ROOT##${maven.build.timestamp}-${project.version}</path>
+								-->
+								<path>/</path>
 								<update>true</update>
 								<url>https://semanticcms.com/ibMqVKsCwt53rtuuEv1dDF/text</url>
 							</configuration>
