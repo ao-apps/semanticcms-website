@@ -40,7 +40,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<!-- Unreliable with current hack: <maven.build.timestamp.format>yyyyMMdd.HHmmss</maven.build.timestamp.format> -->
 	</properties>
 
-	<name>SemanticCMS 1 Website</name>
+	<name>SemanticCMS Website</name>
 	<url>https://semanticcms.com/</url>
 	<description>The semanticcms.com website.</description>
 	<inceptionYear>2016</inceptionYear>
