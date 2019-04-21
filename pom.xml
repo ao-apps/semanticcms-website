@@ -705,7 +705,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content-book</artifactId><version>1.5.1-validation-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-book</artifactId><version>1.4.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-book</artifactId><version>1.4.1-validation-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-all-book</artifactId><version>1.3.1-validation-SNAPSHOT</version>
