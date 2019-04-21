@@ -624,7 +624,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 			<type>pom</type>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all</artifactId><version>1.2.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all</artifactId><version>1.2.1-validation-SNAPSHOT</version>
 			<type>pom</type>
 		</dependency>
 		<dependency>
@@ -753,7 +753,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-book</artifactId><version>1.2.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all-book</artifactId><version>1.2.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all-book</artifactId><version>1.2.1-validation-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-model-book</artifactId><version>1.1.4-validation-SNAPSHOT</version>
