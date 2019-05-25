@@ -1,6 +1,6 @@
 <%--
 semanticcms-website - The semanticcms.com website.
-Copyright (C) 2016, 2017  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2019  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -18,7 +18,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU Lesser General Public License for more details.
 
 You should have received a copy of the GNU Lesser General Public License
-along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
+along with semanticcms-website.along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 --%>
 <%@ page language="java" pageEncoding="UTF-8" session="false" %>
 <%@ taglib prefix="ao" uri="https://aoindustries.com/ao-taglib/" %>
