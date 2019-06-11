@@ -31,10 +31,16 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 	<book name="/all" cvsworkDirectory="~/maven2/ao/semanticcms/all/book/src/main/resources-filtered/META-INF/resources/all">
 		<parent book="/" page="/index.jspx" />
 	</book>
+	<book name="/bom" cvsworkDirectory="~/maven2/ao/semanticcms/bom/book/src/main/resources-filtered/META-INF/resources/bom">
+		<parent book="/" page="/index.jspx" />
+	</book>
 	<book name="/autogit" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/book/src/main/resources-filtered/META-INF/resources/autogit">
 		<parent book="/" page="/index.jspx" />
 	</book>
 	<book name="/autogit/all" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/all/book/src/main/resources-filtered/META-INF/resources/autogit/all">
+		<parent book="/autogit" page="/index.jspx" />
+	</book>
+	<book name="/autogit/bom" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/bom/book/src/main/resources-filtered/META-INF/resources/autogit/bom">
 		<parent book="/autogit" page="/index.jspx" />
 	</book>
 	<book name="/autogit/model" cvsworkDirectory="~/maven2/ao/semanticcms/autogit/model/book/src/main/resources-filtered/META-INF/resources/autogit/model">
@@ -59,6 +65,9 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 		<parent book="/" page="/index.jspx" />
 	</book>
 	<book name="/core/all" cvsworkDirectory="~/maven2/ao/semanticcms/core/all/book/src/main/resources-filtered/META-INF/resources/core/all">
+		<parent book="/core" page="/index.jspx" />
+	</book>
+	<book name="/core/bom" cvsworkDirectory="~/maven2/ao/semanticcms/core/bom/book/src/main/resources-filtered/META-INF/resources/core/bom">
 		<parent book="/core" page="/index.jspx" />
 	</book>
 	<book name="/core/breadcrumblist-json-ld" cvsworkDirectory="~/maven2/ao/semanticcms/core/breadcrumblist-json-ld/book/src/main/resources-filtered/META-INF/resources/core/breadcrumblist-json-ld">
@@ -133,6 +142,9 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 	<book name="/dia/all" cvsworkDirectory="~/maven2/ao/semanticcms/dia/all/book/src/main/resources-filtered/META-INF/resources/dia/all">
 		<parent book="/dia" page="/index.jspx" />
 	</book>
+	<book name="/dia/bom" cvsworkDirectory="~/maven2/ao/semanticcms/dia/bom/book/src/main/resources-filtered/META-INF/resources/dia/bom">
+		<parent book="/dia" page="/index.jspx" />
+	</book>
 	<book name="/dia/model" cvsworkDirectory="~/maven2/ao/semanticcms/dia/model/book/src/main/resources-filtered/META-INF/resources/dia/model">
 		<parent book="/dia" page="/index.jspx" />
 	</book>
@@ -155,6 +167,9 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 		<parent book="/" page="/index.jspx" />
 	</book>
 	<book name="/file/all" cvsworkDirectory="~/maven2/ao/semanticcms/file/all/book/src/main/resources-filtered/META-INF/resources/file/all">
+		<parent book="/file" page="/index.jspx" />
+	</book>
+	<book name="/file/bom" cvsworkDirectory="~/maven2/ao/semanticcms/file/bom/book/src/main/resources-filtered/META-INF/resources/file/bom">
 		<parent book="/file" page="/index.jspx" />
 	</book>
 	<book name="/file/model" cvsworkDirectory="~/maven2/ao/semanticcms/file/model/book/src/main/resources-filtered/META-INF/resources/file/model">
@@ -184,6 +199,9 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 	<book name="/news/all" cvsworkDirectory="~/maven2/ao/semanticcms/news/all/book/src/main/resources-filtered/META-INF/resources/news/all">
 		<parent book="/news" page="/index.jspx" />
 	</book>
+	<book name="/news/bom" cvsworkDirectory="~/maven2/ao/semanticcms/news/bom/book/src/main/resources-filtered/META-INF/resources/news/bom">
+		<parent book="/news" page="/index.jspx" />
+	</book>
 	<book name="/news/model" cvsworkDirectory="~/maven2/ao/semanticcms/news/model/book/src/main/resources-filtered/META-INF/resources/news/model">
 		<parent book="/news" page="/index.jspx" />
 	</book>
@@ -211,6 +229,9 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 	<book name="/openfile/all" cvsworkDirectory="~/maven2/ao/semanticcms/openfile/all/book/src/main/resources-filtered/META-INF/resources/openfile/all">
 		<parent book="/openfile" page="/index.jspx" />
 	</book>
+	<book name="/openfile/bom" cvsworkDirectory="~/maven2/ao/semanticcms/openfile/bom/book/src/main/resources-filtered/META-INF/resources/openfile/bom">
+		<parent book="/openfile" page="/index.jspx" />
+	</book>
 	<book name="/openfile/servlet" cvsworkDirectory="~/maven2/ao/semanticcms/openfile/servlet/book/src/main/resources-filtered/META-INF/resources/openfile/servlet">
 		<parent book="/openfile" page="/index.jspx" />
 	</book>
@@ -226,6 +247,9 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 	<book name="/pages/all" cvsworkDirectory="~/maven2/ao/semanticcms/pages/all/book/src/main/resources-filtered/META-INF/resources/pages/all">
 		<parent book="/pages" page="/index.jspx" />
 	</book>
+	<book name="/pages/bom" cvsworkDirectory="~/maven2/ao/semanticcms/pages/bom/book/src/main/resources-filtered/META-INF/resources/pages/bom">
+		<parent book="/pages" page="/index.jspx" />
+	</book>
 	<book name="/pages/unavailable" cvsworkDirectory="~/maven2/ao/semanticcms/pages/unavailable/book/src/main/resources-filtered/META-INF/resources/pages/unavailable">
 		<parent book="/pages" page="/index.jspx" />
 	</book>
@@ -236,6 +260,9 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 		<parent book="/" page="/index.jspx" />
 	</book>
 	<book name="/resources/all" cvsworkDirectory="~/maven2/ao/semanticcms/resources/all/book/src/main/resources-filtered/META-INF/resources/resources/all">
+		<parent book="/resources" page="/index.jspx" />
+	</book>
+	<book name="/resources/bom" cvsworkDirectory="~/maven2/ao/semanticcms/resources/bom/book/src/main/resources-filtered/META-INF/resources/resources/bom">
 		<parent book="/resources" page="/index.jspx" />
 	</book>
 	<book name="/resources/empty" cvsworkDirectory="~/maven2/ao/semanticcms/resources/empty/book/src/main/resources-filtered/META-INF/resources/resources/empty">
@@ -254,6 +281,9 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 		<parent book="/" page="/index.jspx" />
 	</book>
 	<book name="/section/all" cvsworkDirectory="~/maven2/ao/semanticcms/section/all/book/src/main/resources-filtered/META-INF/resources/section/all">
+		<parent book="/section" page="/index.jspx" />
+	</book>
+	<book name="/section/bom" cvsworkDirectory="~/maven2/ao/semanticcms/section/bom/book/src/main/resources-filtered/META-INF/resources/section/bom">
 		<parent book="/section" page="/index.jspx" />
 	</book>
 	<book name="/section/model" cvsworkDirectory="~/maven2/ao/semanticcms/section/model/book/src/main/resources-filtered/META-INF/resources/section/model">
