@@ -503,7 +503,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 								-->
 								<path>/</path>
 								<update>true</update>
-								<url>https://semanticcms.com/ibMqVKsCwt53rtuuEv1dDF/text</url>
+								<url>${tomcat7-maven-plugin-semanticcms.com}</url>
 							</configuration>
 						</plugin>
 					</plugins>
