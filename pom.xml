@@ -545,7 +545,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-style</artifactId><version>1.1.4-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-style</artifactId><version>1.1.4-validation-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -896,7 +896,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-servlet-book</artifactId><version>1.2.1-validation-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-style-book</artifactId><version>1.1.4-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-style-book</artifactId><version>1.1.4-validation-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-taglib-book</artifactId><version>1.2.1-validation-SNAPSHOT</version>
