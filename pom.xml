@@ -907,6 +907,9 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 				<scope>import</scope>
 			</dependency>
 			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>ao-servlet-util</artifactId><version>1.0.0-POST-SNAPSHOT</version>
+			</dependency>
+			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-tempfiles</artifactId><version>1.0.1-POST-SNAPSHOT</version>
 			</dependency>
 			<dependency>
