@@ -565,7 +565,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-taglib</artifactId><version>1.5.5-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-taglib</artifactId><version>1.5.5-POST-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -941,7 +941,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-servlet-book</artifactId><version>1.7.0-POST-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-taglib-book</artifactId><version>1.5.5-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-taglib-book</artifactId><version>1.5.5-POST-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-pagegraph-book</artifactId><version>1.4.1-SNAPSHOT</version>
