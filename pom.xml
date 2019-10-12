@@ -64,7 +64,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 						<scope>import</scope>
 					</dependency>
 					<dependency>
-						<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-all</artifactId><version>1.6.0-SNAPSHOT</version>
+						<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-all</artifactId><version>1.6.0-POST-SNAPSHOT</version>
 					</dependency>
 					<dependency>
 						<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-tree</artifactId><version>1.4.4-POST-SNAPSHOT</version>
@@ -605,7 +605,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-all</artifactId><version>1.6.0-SNAPSHOT</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-all</artifactId><version>1.6.0-POST-SNAPSHOT</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -980,7 +980,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation-style-book</artifactId><version>1.7.0-POST-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-all-book</artifactId><version>1.6.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-all-book</artifactId><version>1.6.0-POST-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-tree-book</artifactId><version>1.4.4-POST-SNAPSHOT</version>
