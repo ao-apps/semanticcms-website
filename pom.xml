@@ -36,6 +36,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 		<javadoc.breadcrumbs><![CDATA[<a target="_top" href="https://semanticcms.com/">SemanticCMS</a>]]></javadoc.breadcrumbs>
 		<shortTitle />
 		<google.analytics.trackingId>UA-86871646-2</google.analytics.trackingId>
+		<com.semanticcms.googleanalytics.GoogleAnalytics.trackingId>${google.analytics.trackingId}</com.semanticcms.googleanalytics.GoogleAnalytics.trackingId>
 		<!-- Parallel deployment -->
 		<!-- Unreliable with current hack: <maven.build.timestamp.format>yyyyMMdd.HHmmss</maven.build.timestamp.format> -->
 	</properties>
@@ -56,6 +57,10 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 		<!-- Features only enabled during development time -->
 		<profile>
 			<id>development</id>
+			<properties>
+				<!-- Only include Google Analytics on production releases to not pollute with dev data -->
+				<com.semanticcms.googleanalytics.GoogleAnalytics.trackingId></com.semanticcms.googleanalytics.GoogleAnalytics.trackingId>
+			</properties>
 			<dependencyManagement>
 				<dependencies>
 					<dependency>
@@ -384,20 +389,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 				</pluginManagement>
 			</build>
 
-			<dependencyManagement>
-				<dependencies>
-					<!-- Only include Google Analytics on production releases to not pollute with dev data -->
-					<dependency>
-						<groupId>com.semanticcms</groupId><artifactId>semanticcms-google-analytics</artifactId><version>1.2.0-SNAPSHOT</version>
-					</dependency>
-				</dependencies>
-			</dependencyManagement>
-
 			<dependencies>
-				<!-- Only include Google Analytics on production releases to not pollute with dev data -->
-				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-google-analytics</artifactId>
-				</dependency>
 				<!-- Dependencies for javadocs -->
 				<dependency>
 					<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-model</artifactId><version>1.4.4-POST-SNAPSHOT</version>
@@ -637,6 +629,9 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.aoindustries</groupId><artifactId>ao-taglib</artifactId><version>5.0.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-google-analytics</artifactId><version>1.2.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation</artifactId><version>1.9.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
@@ -757,6 +752,9 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 		<!-- Direct -->
 		<dependency>
 			<groupId>com.aoindustries</groupId><artifactId>ao-taglib</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-google-analytics</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation</artifactId>
