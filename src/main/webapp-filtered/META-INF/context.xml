@@ -23,4 +23,9 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 -->
 
 <!-- META-INF/context.xml is used for local development deployment only -->
-<Context path="/semanticcms"/>
+<Context path="/semanticcms">
+
+	<!-- Do not filter whitespace in development -->
+	<Parameter name="com.aoindustries.servlet.filter.TrimFilter.enabled" value="false" />
+
+</Context>
