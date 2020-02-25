@@ -20,6 +20,7 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 --%>
-<%@ page language="java" pageEncoding="UTF-8" session="false" %>
+<%@ page language="java" pageEncoding="UTF-8" %>
+<%@ page session="false" %>
 <%@ taglib prefix="ao" uri="https://aoindustries.com/ao-taglib/" %>
 <ao:redirect page="/file/servlet/index.jspx" statusCode="301" />
