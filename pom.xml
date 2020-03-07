@@ -471,7 +471,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-model</artifactId><version>1.4.5${POST-SNAPSHOT}</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-model</artifactId><version>1.4.6-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -496,7 +496,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-model</artifactId><version>1.4.5${POST-SNAPSHOT}</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-model</artifactId><version>1.4.6-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -526,7 +526,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-model</artifactId><version>1.1.5${POST-SNAPSHOT}</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-model</artifactId><version>1.1.6-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -561,7 +561,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-taglib</artifactId><version>1.5.5${POST-SNAPSHOT}</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-taglib</artifactId><version>1.5.6-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -571,7 +571,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-model</artifactId><version>1.5.1${POST-SNAPSHOT}</version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-model</artifactId><version>1.5.2-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -623,7 +623,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 		<dependencies>
 			<!-- Java EE -->
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>javaee-web-api-bom</artifactId><version>6.0.0${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>javaee-web-api-bom</artifactId><version>6.0.1-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -645,7 +645,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.aoindustries</groupId><artifactId>ao-badges</artifactId><version>1.3.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>ao-concurrent</artifactId><version>1.1.2${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>ao-concurrent</artifactId><version>1.1.3-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-encoding</artifactId><version>3.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
@@ -684,16 +684,16 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.aoindustries</groupId><artifactId>ao-style</artifactId><version>1.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>ao-tempfiles</artifactId><version>1.0.1${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>ao-tempfiles</artifactId><version>1.0.2-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-tempfiles-servlet</artifactId><version>1.1.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>ao-tld-parser</artifactId><version>1.0.1${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>ao-tld-parser</artifactId><version>1.0.2-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>ao-tlds</artifactId><version>1.1.2${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>ao-tlds</artifactId><version>1.1.3-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-web-resources-registry</artifactId><version>0.1.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
@@ -860,7 +860,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-bom-book</artifactId><version>1.5.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-model-book</artifactId><version>1.4.5${POST-SNAPSHOT}</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-model-book</artifactId><version>1.4.6-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-servlet-book</artifactId><version>1.7.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
@@ -884,7 +884,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-bom-book</artifactId><version>1.5.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-model-book</artifactId><version>1.4.5${POST-SNAPSHOT}</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-model-book</artifactId><version>1.4.6-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-servlet-book</artifactId><version>1.8.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
@@ -911,7 +911,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-bom-book</artifactId><version>1.4.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-model-book</artifactId><version>1.1.5${POST-SNAPSHOT}</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-model-book</artifactId><version>1.1.6-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-rss-book</artifactId><version>1.4.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
@@ -941,7 +941,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-servlet-book</artifactId><version>1.8.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-taglib-book</artifactId><version>1.5.5${POST-SNAPSHOT}</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-taglib-book</artifactId><version>1.5.6-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-pagegraph-book</artifactId><version>1.5.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
@@ -959,7 +959,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-bom-book</artifactId><version>1.5.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-model-book</artifactId><version>1.5.1${POST-SNAPSHOT}</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-model-book</artifactId><version>1.5.2-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-servlet-book</artifactId><version>1.8.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
