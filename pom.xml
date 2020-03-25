@@ -38,6 +38,8 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 		<google.analytics.trackingId>UA-86871646-2</google.analytics.trackingId>
 		<!-- Parallel deployment -->
 		<!-- Unreliable with current hack: <maven.build.timestamp.format>yyyyMMdd.HHmmss</maven.build.timestamp.format> -->
+		<!-- Dependencies -->
+		<org.apache.commons:commons-lang3:version>3.9</org.apache.commons:commons-lang3:version>
 	</properties>
 
 	<name>semanticcms.com</name>
@@ -711,7 +713,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.aoindustries</groupId><artifactId>aocode-public</artifactId><version>4.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.commons</groupId><artifactId>commons-lang3</artifactId><version>3.9</version>
+				<groupId>org.apache.commons</groupId><artifactId>commons-lang3</artifactId><version>${org.apache.commons:commons-lang3:version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.webjars</groupId><artifactId>d3js</artifactId><version>5.9.7</version>
