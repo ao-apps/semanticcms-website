@@ -528,7 +528,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-model</artifactId><version>1.1.6-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-model</artifactId><version>1.1.6${POST-SNAPSHOT}</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -913,7 +913,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-bom-book</artifactId><version>1.4.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-model-book</artifactId><version>1.1.6-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-model-book</artifactId><version>1.1.6${POST-SNAPSHOT}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-rss-book</artifactId><version>1.4.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
