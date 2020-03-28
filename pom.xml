@@ -39,7 +39,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 		<!-- Parallel deployment -->
 		<!-- Unreliable with current hack: <maven.build.timestamp.format>yyyyMMdd.HHmmss</maven.build.timestamp.format> -->
 		<!-- Dependencies -->
-		<org.apache.commons.commons-lang3.version>3.9</org.apache.commons.commons-lang3.version>
+		<org.apache.commons.commons-lang3.version>3.10</org.apache.commons.commons-lang3.version>
 	</properties>
 
 	<name>semanticcms.com²</name>
