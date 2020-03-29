@@ -473,7 +473,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId><version>1.8.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId><version>1.8.0${POST-SNAPSHOT}</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 				</dependency>
@@ -855,7 +855,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base-book</artifactId><version>1.4.0${POST-SNAPSHOT}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content-book</artifactId><version>1.8.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content-book</artifactId><version>1.8.0${POST-SNAPSHOT}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-book</artifactId><version>1.7.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
