@@ -768,7 +768,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation</artifactId>
 		</dependency>
-		<!-- Non-classpath Direct -->
+		<!-- Non-classpath Dependencies -->
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId>
 			<type>pom</type>
@@ -834,7 +834,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-canonical-book</artifactId><version>1.2.0${POST-SNAPSHOT}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-docs-book</artifactId><version>1.6.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-docs-book</artifactId><version>1.6.0${POST-SNAPSHOT}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model-book</artifactId><version>1.11.0${POST-SNAPSHOT}</version>
