@@ -492,6 +492,12 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 										<targetPath>theme-documentation/apidocs</targetPath>
 									</overlay>
 									<overlay>
+										<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation-style</artifactId>
+										<type>jar</type>
+										<classifier>javadoc</classifier>
+										<targetPath>theme-documentation/style/apidocs</targetPath>
+									</overlay>
+									<overlay>
 										<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-all</artifactId>
 										<type>jar</type>
 										<classifier>javadoc</classifier>
@@ -843,6 +849,11 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation-style</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+					<classifier>javadoc</classifier>
+					<scope>provided</scope>
+				</dependency>
+				<dependency>
 					<groupId>com.semanticcms</groupId><artifactId>semanticcms-view-all</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
@@ -919,7 +930,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.aoindustries</groupId><artifactId>ao-io-buffer</artifactId><version>3.2.0${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>ao-lang</artifactId><version>4.2.0${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>ao-lang</artifactId><version>4.3.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-net-path-space</artifactId><version>1.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
