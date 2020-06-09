@@ -490,20 +490,22 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 							</overlays>
 						</configuration>
 					</plugin>
+					<!-- Publishing version 1.x still:
 					<plugin>
 						<groupId>org.apache.tomcat.maven</groupId><artifactId>tomcat7-maven-plugin</artifactId>
 						<configuration>
 							<charset>UTF-8</charset>
 							<server>semanticcms.com</server>
-							<!-- Parallel deployment -->
-							<!-- Unreliable with current hack:
+							<!- - Parallel deployment - ->
+							<!- - Unreliable with current hack:
 							<path>/ROOT##${maven.build.timestamp}-${project.version}</path>
-							-->
+							- ->
 							<path>/</path>
 							<update>true</update>
 							<url>${tomcat7-maven-plugin-semanticcms.com}</url>
 						</configuration>
 					</plugin>
+					-->
 				</plugins>
 			</build>
 
@@ -841,6 +843,23 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 				</dependency>
 			</dependencies>
 		</profile>
+		<!-- Publishing version 1.x still:
+		<profile>
+			<id>publish</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.tomcat.maven</groupId><artifactId>tomcat7-maven-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>publish</id><phase>deploy</phase><goals><goal>deploy-only</goal></goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		-->
 	</profiles>
 
 	<dependencyManagement>
