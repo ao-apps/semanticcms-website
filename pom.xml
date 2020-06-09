@@ -610,6 +610,21 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 				</dependency>
 			</dependencies>
 		</profile>
+		<profile>
+			<id>publish</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.tomcat.maven</groupId><artifactId>tomcat7-maven-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>publish</id><phase>deploy</phase><goals><goal>deploy-only</goal></goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
 	</profiles>
 
 	<dependencyManagement>
