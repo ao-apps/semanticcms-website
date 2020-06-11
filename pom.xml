@@ -808,7 +808,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 		</dependency>
 		<!-- Books -->
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-book</artifactId><version>1.14.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-book</artifactId><version>1.14.0${POST-SNAPSHOT}</version>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
