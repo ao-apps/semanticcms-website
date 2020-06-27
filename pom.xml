@@ -509,7 +509,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 						<groupId>org.apache.tomcat.maven</groupId><artifactId>tomcat7-maven-plugin</artifactId>
 						<configuration>
 							<charset>UTF-8</charset>
-							<server>semanticcms.com</server>
+							<server>tomcat7-maven-plugin-semanticcms.com</server>
 							<!- - Parallel deployment - ->
 							<!- - Unreliable with current hack:
 							<path>/ROOT##${maven.build.timestamp}-${project.version}</path>
