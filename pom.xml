@@ -898,7 +898,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 				<type>pom</type>
 			</dependency>
 			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all</artifactId><version>1.5.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all</artifactId><version>1.5.0${POST-SNAPSHOT}</version>
 				<type>pom</type>
 			</dependency>
 			<dependency>
@@ -1135,7 +1135,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all-book</artifactId><version>1.5.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all-book</artifactId><version>1.5.0${POST-SNAPSHOT}</version>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
