@@ -688,7 +688,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation</artifactId><version>1.11.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation</artifactId><version>1.11.0${POST-SNAPSHOT}</version>
 					<classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
@@ -941,7 +941,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-tag-reference-book</artifactId><version>1.6.0${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation-book</artifactId><version>1.11.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation-book</artifactId><version>1.11.0${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation-style-book</artifactId><version>1.8.0${POST-SNAPSHOT}</version>
@@ -1073,7 +1073,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-google-analytics</artifactId><version>1.2.0${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation</artifactId><version>1.11.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation</artifactId><version>1.11.0${POST-SNAPSHOT}</version>
 			</dependency>
 			<!-- Runtime Transitive -->
 			<dependency>
