@@ -622,7 +622,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-servlet</artifactId><version>1.10.1-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-servlet</artifactId><version>1.10.1${POST-SNAPSHOT}</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
@@ -941,7 +941,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-model-book</artifactId><version>1.5.2${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-servlet-book</artifactId><version>1.10.1-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-servlet-book</artifactId><version>1.10.1${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-style-book</artifactId><version>1.7.0${POST-SNAPSHOT}</version>
@@ -1069,7 +1069,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-model</artifactId><version>1.5.2${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-servlet</artifactId><version>1.10.1-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-servlet</artifactId><version>1.10.1${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-taglib</artifactId><version>1.8.1-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
