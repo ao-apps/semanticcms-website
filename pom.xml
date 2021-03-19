@@ -562,7 +562,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-view</artifactId><version>1.5.1-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version><classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-view</artifactId><version>1.5.1${POST-SNAPSHOT}</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
@@ -875,7 +875,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-taglib-book</artifactId><version>1.9.1${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-view-book</artifactId><version>1.5.1-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-view-book</artifactId><version>1.5.1${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-google-analytics-book</artifactId><version>1.2.1${POST-SNAPSHOT}</version>
