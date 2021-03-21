@@ -467,7 +467,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
 				<dependency>
-					<groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId><version>1.4.2${POST-SNAPSHOT}</version><classifier>javadoc</classifier>
+					<groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId><version>1.4.3${POST-SNAPSHOT}</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
@@ -773,7 +773,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-book</artifactId><version>1.17.2${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib-book</artifactId><version>1.4.2${POST-SNAPSHOT}</version>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib-book</artifactId><version>1.4.3${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all-book</artifactId><version>1.8.2${POST-SNAPSHOT}</version>
@@ -1030,7 +1030,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 			</dependency>
 			<!-- javaee-web-api-bom: <groupId>javax.servlet</groupId><artifactId>jstl</artifactId> -->
 			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId><version>1.4.2${POST-SNAPSHOT}</version>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId><version>1.4.3${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>1.13.0${POST-SNAPSHOT}</version>
