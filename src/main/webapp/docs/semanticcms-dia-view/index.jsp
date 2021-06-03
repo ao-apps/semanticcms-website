@@ -1,6 +1,6 @@
 <%--
 semanticcms-website - The semanticcms.com website.
-Copyright (C) 2016, 2017, 2019  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2019, 2021  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -22,5 +22,5 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 --%>
 <%@ page language="java" pageEncoding="UTF-8" %>
 <%@ page session="false" %>
-<%@ taglib prefix="ao" uri="https://aoindustries.com/ao-taglib/" %>
+<%@ taglib prefix="ao" uri="https://oss.aoapps.com/taglib/" %>
 <ao:redirect page="/dia/view/index.jspx" statusCode="301" />
