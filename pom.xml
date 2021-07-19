@@ -25,8 +25,8 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.aorepo</groupId><artifactId>aorepo-parent</artifactId><version>1.16.0-POST-SNAPSHOT</version>
-		<relativePath>../../aorepo/parent/pom.xml</relativePath>
+		<groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><version>1.13.0-POST-SNAPSHOT</version>
+		<relativePath>../parent/pom.xml</relativePath>
 	</parent>
 
 	<groupId>com.semanticcms</groupId><artifactId>website</artifactId><version>1.13.0-SNAPSHOT</version>
@@ -34,7 +34,6 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 
 	<properties>
 		<module.name>com.semanticcms.website</module.name>
-		<google.analytics.trackingId>UA-86871646-2</google.analytics.trackingId>
 		<!-- Parallel deployment -->
 		<!-- Unreliable with current hack: <maven.build.timestamp.format>yyyyMMdd.HHmmss</maven.build.timestamp.format> -->
 		<!-- SonarQube -->
@@ -91,15 +90,14 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 	<repositories>
 		<!-- Repository required here, too, so can find parent -->
 		<repository>
-			<id>aorepo-repository</id>
-			<url>https://aorepo.org/maven2/</url>
+			<id>sonatype-nexus-snapshots</id>
+			<name>Sonatype Nexus Snapshots</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>never</updatePolicy>
+				<enabled>false</enabled>
 			</releases>
 			<snapshots>
 				<enabled>true</enabled>
-				<updatePolicy>daily</updatePolicy>
 			</snapshots>
 		</repository>
 	</repositories>
@@ -159,14 +157,12 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 				<configuration><skip>${build.isSnapshot}</skip></configuration>
 			</plugin>
 			<!-- Never stage snapshot, see https://stackoverflow.com/a/39139979 -->
-			<!--
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId><artifactId>nexus-staging-maven-plugin</artifactId>
 				<configuration>
 					<skipNexusStagingDeployMojo>${build.isSnapshot}</skipNexusStagingDeployMojo>
 				</configuration>
 			</plugin>
-			-->
 		</plugins>
 	</build>
 
