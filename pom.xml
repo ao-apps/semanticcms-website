@@ -798,7 +798,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-bom-book</artifactId><version>1.13.0-POST-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-book</artifactId><version>1.18.0-SNAPSHOT</version>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-book</artifactId><version>1.18.0-POST-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib-book</artifactId><version>1.5.0-POST-SNAPSHOT</version>
