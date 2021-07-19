@@ -29,7 +29,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 		<relativePath>../parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.semanticcms</groupId><artifactId>website</artifactId><version>1.13.0-SNAPSHOT</version>
+	<groupId>com.semanticcms</groupId><artifactId>website</artifactId><version>1.13.0</version>
 	<packaging>war</packaging>
 
 	<properties>
@@ -74,7 +74,7 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 		<connection>scm:git:git://github.com/aoindustries/semanticcms-website.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms-website.git</developerConnection>
 		<url>https://github.com/aoindustries/semanticcms-website</url>
-		<tag>HEAD</tag>
+		<tag>website-1.13.0</tag>
 	</scm>
 
 	<issueManagement>
@@ -475,31 +475,13 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 										<sleep seconds="10" />
 										<mkdir dir="${project.build.directory}/warmup-get-url" />
 										<retry retrycount="12" retrydelay="15000">
-											<get
-												retries="1"
-												src="${publish-semanticcms.com-warmup-get-url}"
-												dest="${project.build.directory}/warmup-get-url/response"
-												maxtime="120"
-												httpusecaches="false"
-											/>
+											<get retries="1" src="${publish-semanticcms.com-warmup-get-url}" dest="${project.build.directory}/warmup-get-url/response" maxtime="120" httpusecaches="false" />
 										</retry>
 										<retry retrycount="12" retrydelay="15000">
-											<get
-												retries="1"
-												src="${publish-semanticcms.com-warmup-get-url.2}"
-												dest="${project.build.directory}/warmup-get-url/response.2"
-												maxtime="120"
-												httpusecaches="false"
-											/>
+											<get retries="1" src="${publish-semanticcms.com-warmup-get-url.2}" dest="${project.build.directory}/warmup-get-url/response.2" maxtime="120" httpusecaches="false" />
 										</retry>
 										<retry retrycount="12" retrydelay="15000">
-											<get
-												retries="1"
-												src="${publish-semanticcms.com-warmup-get-url.3}"
-												dest="${project.build.directory}/warmup-get-url/response.3"
-												maxtime="120"
-												httpusecaches="false"
-											/>
+											<get retries="1" src="${publish-semanticcms.com-warmup-get-url.3}" dest="${project.build.directory}/warmup-get-url/response.3" maxtime="120" httpusecaches="false" />
 										</retry>
 									</target>
 								</configuration>
