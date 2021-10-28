@@ -40,6 +40,8 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 		<sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
 		<sonar.organization>ao-apps</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<!-- Require secure session cookies in production -->
+		<session.cookie.secure>true</session.cookie.secure>
 	</properties>
 
 	<name>semanticcms.com</name>
@@ -165,6 +167,10 @@ along with semanticcms-website.  If not, see <http://www.gnu.org/licenses />.
 		<profile>
 			<!-- Features only enabled during development time -->
 			<id>development</id>
+			<properties>
+				<!-- Allow unsecure session cookies in development -->
+				<session.cookie.secure>false</session.cookie.secure>
+			</properties>
 			<dependencies>
 				<dependency>
 					<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-all</artifactId><version>1.6.1${POST-SNAPSHOT}</version>
