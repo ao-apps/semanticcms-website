@@ -87,9 +87,15 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 	</issueManagement>
 
 	<ciManagement>
+		<system>Jenkins</system>
+		<url>https://jenkins.aoindustries.com/job/ao/job/semanticcms-1.x/job/website/</url>
+	</ciManagement>
+	<!-- Only one allowed in POM:
+	<ciManagement>
 		<system>GitHub Actions</system>
 		<url>https://github.com/ao-apps/semanticcms-website/actions</url>
 	</ciManagement>
+	-->
 
 	<repositories>
 		<!-- Repository required here, too, so can find parent -->
@@ -140,17 +146,12 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 				-->
 				<groupId>org.apache.maven.plugins</groupId><artifactId>maven-war-plugin</artifactId>
 			</plugin>
-			<!-- Never attach sources for snapshot, see https://stackoverflow.com/a/39139979 -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId><artifactId>maven-source-plugin</artifactId>
-				<configuration><skipSource>${build.isSnapshot}</skipSource></configuration>
-			</plugin>
 			<!-- Never install snapshot, see https://stackoverflow.com/a/39139979 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId><artifactId>maven-install-plugin</artifactId>
 				<configuration><skip>${build.isSnapshot}</skip></configuration>
 			</plugin>
-			<!-- Never deploy snapshot, see https://stackoverflow.com/a/39139979 -->
+			<!-- Do not deploy snapshot (unless "jenkins" profile below), see https://stackoverflow.com/a/39139979 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId><artifactId>maven-deploy-plugin</artifactId>
 				<configuration><skip>${build.isSnapshot}</skip></configuration>
@@ -185,40 +186,30 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 				</dependency>
 			</dependencies>
 		</profile>
-		<!--
-			Required for bug "requireActiveProfile ignores inherited profiles in submodules":
-			https://issues.apache.org/jira/browse/MENFORCER-226
-		-->
 		<profile>
-			<id>POST-SNAPSHOT</id>
-			<properties>
-				<POST-SNAPSHOT>-POST-SNAPSHOT</POST-SNAPSHOT>
-			</properties>
+			<id>jenkins</id>
+			<build>
+				<plugins>
+					<!-- Always deploy Jenkins builds -->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId><artifactId>maven-deploy-plugin</artifactId>
+						<configuration><skip>false</skip></configuration>
+					</plugin>
+				</plugins>
+			</build>
 		</profile>
 		<profile>
 			<id>publish</id>
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>org.apache.maven.plugins</groupId><artifactId>maven-enforcer-plugin</artifactId>
-						<executions>
-							<execution>
-								<id>publish-enforce-profiles</id><goals><goal>enforce</goal></goals>
-								<configuration>
-									<rules>
-										<requireActiveProfile>
-											<message>"publish" requires "POST-SNAPSHOT" profile</message>
-											<profiles>POST-SNAPSHOT</profiles>
-										</requireActiveProfile>
-									</rules>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
-					<plugin>
 						<groupId>org.apache.maven.plugins</groupId><artifactId>maven-war-plugin</artifactId>
 						<configuration>
 							<overlays>
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-all</artifactId><classifier>javadoc</classifier> -->
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-all</artifactId><classifier>javadoc</classifier> -->
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-bom</artifactId><classifier>javadoc</classifier> -->
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit</artifactId><classifier>javadoc</classifier> -->
 								<overlay>
 									<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-model</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
@@ -244,11 +235,16 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 									<type>jar</type>
 									<targetPath>autogit/view/apidocs</targetPath>
 								</overlay>
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-bom</artifactId><classifier>javadoc</classifier> -->
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><classifier>javadoc</classifier> -->
 								<overlay>
 									<groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
 									<targetPath>changelog/taglib/apidocs</targetPath>
 								</overlay>
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><classifier>javadoc</classifier> -->
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-bom</artifactId><classifier>javadoc</classifier> -->
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core</artifactId><classifier>javadoc</classifier> -->
 								<overlay>
 									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
@@ -259,6 +255,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 									<type>jar</type>
 									<targetPath>core/canonical/apidocs</targetPath>
 								</overlay>
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-docs</artifactId><classifier>javadoc</classifier> -->
 								<overlay>
 									<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
@@ -294,6 +291,9 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 									<type>jar</type>
 									<targetPath>core/view-content/apidocs</targetPath>
 								</overlay>
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-all</artifactId><classifier>javadoc</classifier> -->
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-bom</artifactId><classifier>javadoc</classifier> -->
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia</artifactId><classifier>javadoc</classifier> -->
 								<overlay>
 									<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-model</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
@@ -319,6 +319,9 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 									<type>jar</type>
 									<targetPath>dia/view/apidocs</targetPath>
 								</overlay>
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-all</artifactId><classifier>javadoc</classifier> -->
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-bom</artifactId><classifier>javadoc</classifier> -->
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-file</artifactId><classifier>javadoc</classifier> -->
 								<overlay>
 									<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-model</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
@@ -349,6 +352,9 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 									<type>jar</type>
 									<targetPath>google-analytics/apidocs</targetPath>
 								</overlay>
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all</artifactId><classifier>javadoc</classifier> -->
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-bom</artifactId><classifier>javadoc</classifier> -->
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-news</artifactId><classifier>javadoc</classifier> -->
 								<overlay>
 									<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-model</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
@@ -379,6 +385,9 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 									<type>jar</type>
 									<targetPath>news/view/apidocs</targetPath>
 								</overlay>
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-all</artifactId><classifier>javadoc</classifier> -->
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-bom</artifactId><classifier>javadoc</classifier> -->
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile</artifactId><classifier>javadoc</classifier> -->
 								<overlay>
 									<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-servlet</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
@@ -394,6 +403,10 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 									<type>jar</type>
 									<targetPath>pagegraph/apidocs</targetPath>
 								</overlay>
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><classifier>javadoc</classifier> -->
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all</artifactId><classifier>javadoc</classifier> -->
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-bom</artifactId><classifier>javadoc</classifier> -->
+								<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-section</artifactId><classifier>javadoc</classifier> -->
 								<overlay>
 									<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-model</artifactId><classifier>javadoc</classifier>
 									<type>jar</type>
@@ -476,13 +489,31 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 										<sleep seconds="10" />
 										<mkdir dir="${project.build.directory}/warmup-get-url" />
 										<retry retrycount="12" retrydelay="15000">
-											<get retries="1" src="${publish-semanticcms.com-warmup-get-url}" dest="${project.build.directory}/warmup-get-url/response" maxtime="120" httpusecaches="false" />
+											<get
+												retries="1"
+												src="${publish-semanticcms.com-warmup-get-url}"
+												dest="${project.build.directory}/warmup-get-url/response"
+												maxtime="120"
+												httpusecaches="false"
+											/>
 										</retry>
 										<retry retrycount="12" retrydelay="15000">
-											<get retries="1" src="${publish-semanticcms.com-warmup-get-url.2}" dest="${project.build.directory}/warmup-get-url/response.2" maxtime="120" httpusecaches="false" />
+											<get
+												retries="1"
+												src="${publish-semanticcms.com-warmup-get-url.2}"
+												dest="${project.build.directory}/warmup-get-url/response.2"
+												maxtime="120"
+												httpusecaches="false"
+											/>
 										</retry>
 										<retry retrycount="12" retrydelay="15000">
-											<get retries="1" src="${publish-semanticcms.com-warmup-get-url.3}" dest="${project.build.directory}/warmup-get-url/response.3" maxtime="120" httpusecaches="false" />
+											<get
+												retries="1"
+												src="${publish-semanticcms.com-warmup-get-url.3}"
+												dest="${project.build.directory}/warmup-get-url/response.3"
+												maxtime="120"
+												httpusecaches="false"
+											/>
 										</retry>
 									</target>
 								</configuration>
@@ -493,6 +524,10 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 			</build>
 			<dependencies>
 				<!-- Dependencies for javadocs -->
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-all</artifactId><classifier>javadoc</classifier> -->
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-all</artifactId><classifier>javadoc</classifier> -->
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-bom</artifactId><classifier>javadoc</classifier> -->
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit</artifactId><classifier>javadoc</classifier> -->
 				<dependency>
 					<groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-model</artifactId><version>1.5.0-POST-SNAPSHOT</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
@@ -518,11 +553,16 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-bom</artifactId><classifier>javadoc</classifier> -->
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><classifier>javadoc</classifier> -->
 				<dependency>
 					<groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId><version>1.5.0-POST-SNAPSHOT</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><classifier>javadoc</classifier> -->
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-bom</artifactId><classifier>javadoc</classifier> -->
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core</artifactId><classifier>javadoc</classifier> -->
 				<dependency>
 					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId><version>1.4.0-POST-SNAPSHOT</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
@@ -533,6 +573,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-docs</artifactId><classifier>javadoc</classifier> -->
 				<dependency>
 					<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>1.14.1-POST-SNAPSHOT</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
@@ -568,6 +609,9 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-all</artifactId><classifier>javadoc</classifier> -->
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-bom</artifactId><classifier>javadoc</classifier> -->
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia</artifactId><classifier>javadoc</classifier> -->
 				<dependency>
 					<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-model</artifactId><version>1.5.0-POST-SNAPSHOT</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
@@ -593,6 +637,9 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-all</artifactId><classifier>javadoc</classifier> -->
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-bom</artifactId><classifier>javadoc</classifier> -->
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-file</artifactId><classifier>javadoc</classifier> -->
 				<dependency>
 					<groupId>com.semanticcms</groupId><artifactId>semanticcms-file-model</artifactId><version>1.5.0-POST-SNAPSHOT</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
@@ -623,6 +670,9 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all</artifactId><classifier>javadoc</classifier> -->
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-bom</artifactId><classifier>javadoc</classifier> -->
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-news</artifactId><classifier>javadoc</classifier> -->
 				<dependency>
 					<groupId>com.semanticcms</groupId><artifactId>semanticcms-news-model</artifactId><version>1.2.0-POST-SNAPSHOT</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
@@ -653,6 +703,9 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-all</artifactId><classifier>javadoc</classifier> -->
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-bom</artifactId><classifier>javadoc</classifier> -->
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile</artifactId><classifier>javadoc</classifier> -->
 				<dependency>
 					<groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-servlet</artifactId><version>1.10.1-POST-SNAPSHOT</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
@@ -668,6 +721,10 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 					<scope>provided</scope>
 					<exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
 				</dependency>
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><classifier>javadoc</classifier> -->
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all</artifactId><classifier>javadoc</classifier> -->
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-bom</artifactId><classifier>javadoc</classifier> -->
+				<!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-section</artifactId><classifier>javadoc</classifier> -->
 				<dependency>
 					<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-model</artifactId><version>1.6.0-POST-SNAPSHOT</version><classifier>javadoc</classifier>
 					<scope>provided</scope>
