@@ -44,6 +44,10 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 		<!-- Require secure session cookies in production -->
 		<session.cookie.secure>true</session.cookie.secure>
+		<!-- Default publish settings -->
+		<publish-semanticcms.com-warmup-get-url>https://semanticcms.com/</publish-semanticcms.com-warmup-get-url>
+		<publish-semanticcms.com-warmup-get-url.2>https://semanticcms.com/sitemap-index.xml</publish-semanticcms.com-warmup-get-url.2>
+		<publish-semanticcms.com-warmup-get-url.3>https://semanticcms.com/?view=news</publish-semanticcms.com-warmup-get-url.3>
 	</properties>
 
 	<name>semanticcms.com²</name>
