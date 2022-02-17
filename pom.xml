@@ -856,7 +856,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content-book</artifactId><version>1.9.0-POST-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-all-book</artifactId><version>1.7.2-SNAPSHOT</version>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-all-book</artifactId><version>1.7.2-POST-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-bom-book</artifactId><version>1.7.2-SNAPSHOT</version>
