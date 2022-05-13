@@ -123,4 +123,4 @@ module com.semanticcms.website {
   requires com.semanticcms.view.all.book; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-view-all-book</artifactId>
   requires com.semanticcms.view.tree.book; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-view-tree-book</artifactId>
   requires com.semanticcms.view.whatlinkshere.book; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-view-what-links-here-book</artifactId>
-} // TODO: Avoiding rewrite-maven-plugin-4.22.2 truncation
+}
