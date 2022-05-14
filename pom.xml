@@ -530,7 +530,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
         <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-bom</artifactId><classifier>javadoc</classifier> -->
         <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><classifier>javadoc</classifier> -->
         <dependency>
-          <groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId><version>1.5.1-SNAPSHOT</version><classifier>javadoc</classifier>
+          <groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId><version>1.5.1-POST-SNAPSHOT</version><classifier>javadoc</classifier>
           <scope>provided</scope>
           <exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
         </dependency>
@@ -1070,7 +1070,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>joda-time</groupId><artifactId>joda-time</artifactId><version>2.10.14</version>
       </dependency>
       <dependency>
-        <groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId><version>1.5.1-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId><version>1.5.1${POST-SNAPSHOT}</version>
       </dependency>
       <dependency>
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>1.14.1${POST-SNAPSHOT}</version>
