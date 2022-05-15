@@ -29,7 +29,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
     <relativePath>../parent/pom.xml</relativePath>
   </parent>
 
-  <groupId>com.semanticcms</groupId><artifactId>website</artifactId><version>1.14.0</version>
+  <groupId>com.semanticcms</groupId><artifactId>website</artifactId><version>1.14.0-POST-SNAPSHOT</version>
   <packaging>war</packaging>
 
   <properties>
@@ -82,7 +82,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
     <connection>scm:git:git://github.com/ao-apps/semanticcms-website.git</connection>
     <developerConnection>scm:git:git@github.com:ao-apps/semanticcms-website.git</developerConnection>
     <url>https://github.com/ao-apps/semanticcms-website</url>
-    <tag>website-1.14.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <issueManagement>
