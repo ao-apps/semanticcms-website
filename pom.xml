@@ -802,7 +802,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all-book</artifactId><version>1.9.3-POST-SNAPSHOT</version>
       </dependency>
       <dependency>
-        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-bom-book</artifactId><version>1.9.3-SNAPSHOT</version>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-bom-book</artifactId><version>1.9.3-POST-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-book</artifactId><version>1.12.3-SNAPSHOT</version>
