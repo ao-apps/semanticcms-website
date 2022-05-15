@@ -940,10 +940,10 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-parent-book</artifactId><version>1.14.0-POST-SNAPSHOT</version>
       </dependency>
       <dependency>
-        <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all</artifactId><version>1.7.2-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all</artifactId><version>1.7.2${POST-SNAPSHOT}</version>
       </dependency>
       <dependency>
-        <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all-book</artifactId><version>1.7.2-SNAPSHOT</version>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all-book</artifactId><version>1.7.2-POST-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-bom-book</artifactId><version>1.7.2-SNAPSHOT</version>
