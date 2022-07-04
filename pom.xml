@@ -50,7 +50,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
     <publish-semanticcms.com-warmup-get-url.3>https://semanticcms.com/?view=news</publish-semanticcms.com-warmup-get-url.3>
   </properties>
 
-  <name>semanticcms.com²</name>
+  <name>semanticcms.com</name>
   <url>https://semanticcms.com/</url>
   <description>The semanticcms.com website.</description>
   <inceptionYear>2016</inceptionYear>
