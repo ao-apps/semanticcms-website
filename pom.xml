@@ -25,7 +25,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><version>1.15.9-POST-SNAPSHOT</version>
+    <groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><version>1.16.0-SNAPSHOT</version>
     <relativePath>../parent/pom.xml</relativePath>
   </parent>
 
@@ -976,7 +976,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-pagegraph-book</artifactId><version>1.7.0-POST-SNAPSHOT</version>
       </dependency>
       <dependency>
-        <groupId>com.semanticcms</groupId><artifactId>semanticcms-parent-book</artifactId><version>1.15.9-POST-SNAPSHOT</version>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-parent-book</artifactId><version>1.16.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all</artifactId><version>1.7.2${POST-SNAPSHOT}</version>
@@ -1022,7 +1022,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
       </dependency>
       <!-- Transitive -->
       <dependency>
-        <groupId>com.aoapps</groupId><artifactId>ao-badges</artifactId><version>1.9.0${POST-SNAPSHOT}</version>
+        <groupId>com.aoapps</groupId><artifactId>ao-badges</artifactId><version>1.10.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
       </dependency>
       <dependency>
         <groupId>com.aoapps</groupId><artifactId>ao-collections</artifactId><version>3.0.0${POST-SNAPSHOT}</version>
@@ -1160,7 +1160,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-util</artifactId><version>0.7.0${POST-SNAPSHOT}</version>
       </dependency>
       <dependency>
-        <groupId>com.aoapps</groupId><artifactId>ao-javadoc-offline</artifactId><version>3.3.0${POST-SNAPSHOT}</version>
+        <groupId>com.aoapps</groupId><artifactId>ao-javadoc-offline</artifactId><version>3.4.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
       </dependency>
       <dependency>
         <groupId>com.aoapps</groupId><artifactId>ao-web-resources-renderer</artifactId><version>0.5.0${POST-SNAPSHOT}</version>
