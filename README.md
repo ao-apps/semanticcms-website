@@ -19,7 +19,7 @@ The [semanticcms.com](https://semanticcms.com/) website.
 
 ## Project Links
 * [Project Home](https://semanticcms.com/)
-* [Maven Central Repository](https://central.sonatype.com/search?namespace=com.semanticcms&q=a%3Awebsite)
+* [Maven Central Repository](https://central.sonatype.com/artifact/com.semanticcms/website)
 * [GitHub](https://github.com/ao-apps/semanticcms-website)
 
 ## Contact Us
