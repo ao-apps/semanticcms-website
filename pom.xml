@@ -25,7 +25,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><version>1.17.2-POST-SNAPSHOT</version>
+    <groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><version>1.17.3-SNAPSHOT</version>
     <relativePath>../parent/pom.xml</relativePath>
   </parent>
 
@@ -771,7 +771,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
           <exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
         </dependency>
         <dependency>
-          <groupId>com.semanticcms</groupId><artifactId>semanticcms-tag-reference</artifactId><version>1.10.0-POST-SNAPSHOT</version><classifier>javadoc</classifier>
+          <groupId>com.semanticcms</groupId><artifactId>semanticcms-tag-reference</artifactId><version>1.10.1-SNAPSHOT</version><classifier>javadoc</classifier>
           <scope>provided</scope>
           <exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
         </dependency>
@@ -988,7 +988,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-pagegraph-book</artifactId><version>1.7.0-POST-SNAPSHOT</version>
       </dependency>
       <dependency>
-        <groupId>com.semanticcms</groupId><artifactId>semanticcms-parent-book</artifactId><version>1.17.2-POST-SNAPSHOT</version>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-parent-book</artifactId><version>1.17.3-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all</artifactId><version>1.7.2${POST-SNAPSHOT}</version>
@@ -1015,7 +1015,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-taglib-book</artifactId><version>1.9.1-POST-SNAPSHOT</version>
       </dependency>
       <dependency>
-        <groupId>com.semanticcms</groupId><artifactId>semanticcms-tag-reference-book</artifactId><version>1.10.0-POST-SNAPSHOT</version>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-tag-reference-book</artifactId><version>1.10.1-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation-book</artifactId><version>1.12.3-POST-SNAPSHOT</version>
