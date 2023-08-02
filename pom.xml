@@ -1034,7 +1034,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
       </dependency>
       <!-- Transitive -->
       <dependency>
-        <groupId>com.aoapps</groupId><artifactId>ao-badges</artifactId><version>1.10.0${POST-SNAPSHOT}</version>
+        <groupId>com.aoapps</groupId><artifactId>ao-badges</artifactId><version>1.10.1${POST-SNAPSHOT}</version>
       </dependency>
       <dependency>
         <groupId>com.aoapps</groupId><artifactId>ao-collections</artifactId><version>3.0.0${POST-SNAPSHOT}</version>
