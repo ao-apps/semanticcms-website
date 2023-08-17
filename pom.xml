@@ -33,7 +33,6 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
   <packaging>war</packaging>
 
   <properties>
-    <project.build.outputTimestamp>2023-02-08T21:06:04Z</project.build.outputTimestamp>
     <module.name>com.semanticcms.website</module.name>
     <!-- Parallel deployment -->
     <!-- Unreliable with current hack: <maven.build.timestamp.format>yyyyMMdd.HHmmss</maven.build.timestamp.format> -->
