@@ -206,372 +206,329 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
       <build>
         <plugins>
           <plugin>
+            <groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId>
+            <executions>
+              <!-- Unpack all javadoc JARs in preparation for packaging as javadoc-webresources -->
+              <execution>
+                <id>unpack.javadocs</id><phase>generate-resources</phase><goals><goal>unpack</goal></goals>
+                <configuration>
+                  <artifactItems>
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit</artifactId><classifier>javadoc</classifier> -->
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-model</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-autogit-model/META-INF/resources/autogit/model/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-servlet</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-autogit-servlet/META-INF/resources/autogit/servlet/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-style</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-autogit-style/META-INF/resources/autogit/style/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-taglib</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-autogit-taglib/META-INF/resources/autogit/taglib/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-view</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-autogit-view/META-INF/resources/autogit/view/apidocs</outputDirectory>
+                    </artifactItem>
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><classifier>javadoc</classifier> -->
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-changelog-taglib/META-INF/resources/changelog/taglib/apidocs</outputDirectory>
+                    </artifactItem>
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core</artifactId><classifier>javadoc</classifier> -->
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-breadcrumblist-json-ld/META-INF/resources/core/breadcrumblist-json-ld/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-canonical</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-canonical/META-INF/resources/core/canonical/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-controller</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-controller/META-INF/resources/core/controller/apidocs</outputDirectory>
+                    </artifactItem>
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-docs</artifactId><classifier>javadoc</classifier> -->
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-model/META-INF/resources/core/model/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-pages/META-INF/resources/core/pages/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jsp</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-pages-jsp/META-INF/resources/core/pages/jsp/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-pages-jspx/META-INF/resources/core/pages/jspx/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-local</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-pages-local/META-INF/resources/core/pages/local/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-servlet</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-pages-servlet/META-INF/resources/core/pages/servlet/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-union</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-pages-union/META-INF/resources/core/pages/union/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-renderer/META-INF/resources/core/renderer/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-renderer-html/META-INF/resources/core/renderer/html/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-servlet</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-renderer-servlet/META-INF/resources/core/renderer/servlet/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-resources/META-INF/resources/core/resources/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources-servlet</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-resources-servlet/META-INF/resources/core/resources/servlet/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-servlet/META-INF/resources/core/servlet/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-sitemap/META-INF/resources/core/sitemap/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-style/META-INF/resources/core/style/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-taglib/META-INF/resources/core/taglib/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-theme-base/META-INF/resources/core/theme-base/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-core-view-content/META-INF/resources/core/view-content/apidocs</outputDirectory>
+                    </artifactItem>
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia</artifactId><classifier>javadoc</classifier> -->
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-model</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-dia-model/META-INF/resources/dia/model/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-renderer-html</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-dia-renderer-html/META-INF/resources/dia/renderer/html/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-servlet</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-dia-servlet/META-INF/resources/dia/servlet/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-style</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-dia-style/META-INF/resources/dia/style/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-taglib</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-dia-taglib/META-INF/resources/dia/taglib/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-view</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-dia-view/META-INF/resources/dia/view/apidocs</outputDirectory>
+                    </artifactItem>
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-file</artifactId><classifier>javadoc</classifier> -->
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-model</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-file-model/META-INF/resources/file/model/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-renderer-html</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-file-renderer-html/META-INF/resources/file/renderer/html/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-servlet</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-file-servlet/META-INF/resources/file/servlet/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-style</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-file-style/META-INF/resources/file/style/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-taglib</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-file-taglib/META-INF/resources/file/taglib/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-view</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-file-view/META-INF/resources/file/view/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-google-analytics</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-google-analytics/META-INF/resources/google-analytics/apidocs</outputDirectory>
+                    </artifactItem>
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-news</artifactId><classifier>javadoc</classifier> -->
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-model</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-news-model/META-INF/resources/news/model/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-renderer-html</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-news-renderer-html/META-INF/resources/news/renderer/html/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-rss</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-news-rss/META-INF/resources/news/rss/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-servlet</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-news-servlet/META-INF/resources/news/servlet/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-style</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-news-style/META-INF/resources/news/style/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-taglib</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-news-taglib/META-INF/resources/news/taglib/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-view</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-news-view/META-INF/resources/news/view/apidocs</outputDirectory>
+                    </artifactItem>
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile</artifactId><classifier>javadoc</classifier> -->
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-servlet</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-openfile-servlet/META-INF/resources/openfile/servlet/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-taglib</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-openfile-taglib/META-INF/resources/openfile/taglib/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-pagegraph</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-pagegraph/META-INF/resources/pagegraph/apidocs</outputDirectory>
+                    </artifactItem>
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-pages-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-pages-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-pages</artifactId><classifier>javadoc</classifier> -->
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-pages-unavailable</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-pages-unavailable/META-INF/resources/pages/missing/apidocs</outputDirectory>
+                    </artifactItem>
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-resources</artifactId><classifier>javadoc</classifier> -->
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-empty</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-resources-empty/META-INF/resources/resources/empty/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-filesystem</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-resources-filesystem/META-INF/resources/resources/filesystem/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-unavailable</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-resources-unavailable/META-INF/resources/resources/unavailable/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-union</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-resources-union/META-INF/resources/resources/union/apidocs</outputDirectory>
+                    </artifactItem>
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-section</artifactId><classifier>javadoc</classifier> -->
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-model</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-section-model/META-INF/resources/section/model/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-renderer-html</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-section-renderer-html/META-INF/resources/section/renderer/html/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-servlet</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-section-servlet/META-INF/resources/section/servlet/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-style</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-section-style/META-INF/resources/section/style/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-taglib</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-section-taglib/META-INF/resources/section/taglib/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-tag-reference</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-tag-reference/META-INF/resources/tag-reference/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-theme-documentation/META-INF/resources/theme-documentation/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation-style</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-theme-documentation-style/META-INF/resources/theme-documentation/style/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-view-all</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-view-all/META-INF/resources/view-all/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-view-tree</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-view-tree/META-INF/resources/view-tree/apidocs</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>com.semanticcms</groupId><artifactId>semanticcms-view-what-links-here</artifactId><classifier>javadoc</classifier>
+                      <outputDirectory>${project.build.directory}/dependency/unpack.javadocs/com.semanticcms/semanticcms-view-what-links-here/META-INF/resources/view-what-links-here/apidocs</outputDirectory>
+                    </artifactItem>
+                  </artifactItems>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
             <groupId>org.apache.maven.plugins</groupId><artifactId>maven-war-plugin</artifactId>
             <configuration>
-              <overlays>
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-all</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-all</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-bom</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit</artifactId><classifier>javadoc</classifier> -->
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-model</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>autogit/model/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-servlet</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>autogit/servlet/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-style</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>autogit/style/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-taglib</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>autogit/taglib/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-view</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>autogit/view/apidocs</targetPath>
-                </overlay>
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-bom</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><classifier>javadoc</classifier> -->
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>changelog/taglib/apidocs</targetPath>
-                </overlay>
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-bom</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core</artifactId><classifier>javadoc</classifier> -->
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/breadcrumblist-json-ld/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-canonical</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/canonical/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-controller</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/controller/apidocs</targetPath>
-                </overlay>
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-docs</artifactId><classifier>javadoc</classifier> -->
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/model/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/pages/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jsp</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/pages/jsp/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/pages/jspx/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-local</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/pages/local/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-servlet</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/pages/servlet/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-union</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/pages/union/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/renderer/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/renderer/html/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-servlet</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/renderer/servlet/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/resources/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources-servlet</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/resources/servlet/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/servlet/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/sitemap/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/style/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/taglib/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/theme-base/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>core/view-content/apidocs</targetPath>
-                </overlay>
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-all</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-bom</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia</artifactId><classifier>javadoc</classifier> -->
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-model</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>dia/model/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-renderer-html</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>dia/renderer/html/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-servlet</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>dia/servlet/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-style</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>dia/style/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-taglib</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>dia/taglib/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-view</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>dia/view/apidocs</targetPath>
-                </overlay>
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-all</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-bom</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-file</artifactId><classifier>javadoc</classifier> -->
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-model</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>file/model/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-renderer-html</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>file/renderer/html/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-servlet</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>file/servlet/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-style</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>file/style/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-taglib</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>file/taglib/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-view</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>file/view/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-google-analytics</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>google-analytics/apidocs</targetPath>
-                </overlay>
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-bom</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-news</artifactId><classifier>javadoc</classifier> -->
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-model</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>news/model/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-renderer-html</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>news/renderer/html/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-rss</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>news/rss/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-servlet</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>news/servlet/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-style</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>news/style/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-taglib</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>news/taglib/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-view</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>news/view/apidocs</targetPath>
-                </overlay>
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-all</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-bom</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile</artifactId><classifier>javadoc</classifier> -->
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-servlet</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>openfile/servlet/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-taglib</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>openfile/taglib/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-pagegraph</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>pagegraph/apidocs</targetPath>
-                </overlay>
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-pages-all</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-pages-bom</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-pages</artifactId><classifier>javadoc</classifier> -->
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-pages-unavailable</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>pages/missing/apidocs</targetPath>
-                </overlay>
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-all</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-bom</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-resources</artifactId><classifier>javadoc</classifier> -->
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-empty</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>resources/empty/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-filesystem</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>resources/filesystem/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-unavailable</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>resources/unavailable/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-union</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>resources/union/apidocs</targetPath>
-                </overlay>
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-bom</artifactId><classifier>javadoc</classifier> -->
-                <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-section</artifactId><classifier>javadoc</classifier> -->
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-model</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>section/model/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-renderer-html</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>section/renderer/html/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-servlet</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>section/servlet/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-style</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>section/style/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-taglib</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>section/taglib/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-tag-reference</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>tag-reference/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>theme-documentation/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-theme-documentation-style</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>theme-documentation/style/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-view-all</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>view-all/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-view-tree</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>view-tree/apidocs</targetPath>
-                </overlay>
-                <overlay>
-                  <groupId>com.semanticcms</groupId><artifactId>semanticcms-view-what-links-here</artifactId><classifier>javadoc</classifier>
-                  <type>jar</type>
-                  <targetPath>view-what-links-here/apidocs</targetPath>
-                </overlay>
-              </overlays>
+              <webResources>
+                <!-- Default Web Resources -->
+                <resource>
+                  <directory>src/main/webapp-filtered</directory>
+                  <filtering>true</filtering>
+                </resource>
+                <!-- Javadocs -->
+                <resource>
+                  <directory>${project.build.directory}/dependency/javadoc-webresources</directory>
+                  <filtering>false</filtering>
+                </resource>
+              </webResources>
             </configuration>
           </plugin>
           <!-- Publishing version 1.x still:
@@ -594,9 +551,157 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
               </execution>
             </executions>
           </plugin>
+          -->
           <plugin>
             <groupId>org.apache.maven.plugins</groupId><artifactId>maven-antrun-plugin</artifactId>
             <executions>
+              <execution>
+                <id>create-javadoc-webresources</id><phase>generate-resources</phase><goals><goal>run</goal></goals>
+                <configuration>
+                  <target>
+                    <!-- See https://stackoverflow.com/a/14740667/7121505 -->
+                    <taskdef name="groovy" classname="org.codehaus.groovy.ant.Groovy"/>
+                    <macrodef name="filedate">
+                      <attribute name="file"/>
+                      <attribute name="property"/>
+                      <sequential>
+                        <groovy>
+                          import java.io.File
+                          import java.io.IOException
+                          File file = new File("@{file}")
+                          if (!file.exists()) {
+                            throw new IOException("File does not exist: " + file);
+                          }
+                          if (!file.isFile()) {
+                            throw new IOException("Not a regular file: " + file);
+                          }
+                          properties.'@{property}' = file.lastModified()
+                       </groovy>
+                      </sequential>
+                    </macrodef>
+                    <macrodef name="create-javadoc-webresource">
+                      <attribute name="groupId"/>
+                      <attribute name="artifactId"/>
+                      <attribute name="path"/>
+                      <sequential>
+                        <filedate
+                          file="${project.build.directory}/dependency/unpack.javadocs/@{groupId}/@{artifactId}/META-INF/resources@{path}/apidocs/META-INF/MANIFEST.MF"
+                          property="@{groupId}:@{artifactId}.modified"
+                        />
+                        <jar
+                          destfile="${project.build.directory}/dependency/javadoc-webresources/WEB-INF/lib/@{artifactId}-${@{groupId}:@{artifactId}:jar:javadoc.version}-javadoc-webresource.jar"
+                          manifest="${project.build.directory}/dependency/unpack.javadocs/@{groupId}/@{artifactId}/META-INF/resources@{path}/apidocs/META-INF/MANIFEST.MF"
+                          modificationtime="${@{groupId}:@{artifactId}.modified}"
+                        >
+                          <fileset
+                            dir="${project.build.directory}/dependency/unpack.javadocs/@{groupId}/@{artifactId}"
+                            excludes="**/MANIFEST.MF"
+                          />
+                        </jar>
+                      </sequential>
+                    </macrodef>
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit</artifactId><classifier>javadoc</classifier> -->
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-autogit-model" path="/autogit/model" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-autogit-servlet" path="/autogit/servlet" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-autogit-style" path="/autogit/style" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-autogit-taglib" path="/autogit/taglib" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-autogit-view" path="/autogit/view" />
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><classifier>javadoc</classifier> -->
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-changelog-taglib" path="/changelog/taglib" />
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core</artifactId><classifier>javadoc</classifier> -->
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-breadcrumblist-json-ld" path="/core/breadcrumblist-json-ld" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-canonical" path="/core/canonical" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-controller" path="/core/controller" />
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-docs</artifactId><classifier>javadoc</classifier> -->
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-model" path="/core/model" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-pages" path="/core/pages" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-pages-jsp" path="/core/pages/jsp" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-pages-jspx" path="/core/pages/jspx" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-pages-local" path="/core/pages/local" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-pages-servlet" path="/core/pages/servlet" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-pages-union" path="/core/pages/union" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-renderer" path="/core/renderer" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-renderer-html" path="/core/renderer/html" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-renderer-servlet" path="/core/renderer/servlet" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-resources" path="/core/resources" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-resources-servlet" path="/core/resources/servlet" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-servlet" path="/core/servlet" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-sitemap" path="/core/sitemap" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-style" path="/core/style" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-taglib" path="/core/taglib" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-theme-base" path="/core/theme-base" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-core-view-content" path="/core/view-content" />
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-dia</artifactId><classifier>javadoc</classifier> -->
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-dia-model" path="/dia/model" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-dia-renderer-html" path="/dia/renderer/html" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-dia-servlet" path="/dia/servlet" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-dia-style" path="/dia/style" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-dia-taglib" path="/dia/taglib" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-dia-view" path="/dia/view" />
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-file-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-file</artifactId><classifier>javadoc</classifier> -->
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-file-model" path="/file/model" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-file-renderer-html" path="/file/renderer/html" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-file-servlet" path="/file/servlet" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-file-style" path="/file/style" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-file-taglib" path="/file/taglib" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-file-view" path="/file/view" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-google-analytics" path="/google-analytics" />
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-news</artifactId><classifier>javadoc</classifier> -->
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-news-model" path="/news/model" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-news-renderer-html" path="/news/renderer/html" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-news-rss" path="/news/rss" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-news-servlet" path="/news/servlet" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-news-style" path="/news/style" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-news-taglib" path="/news/taglib" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-news-view" path="/news/view" />
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile</artifactId><classifier>javadoc</classifier> -->
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-openfile-servlet" path="/openfile/servlet" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-openfile-taglib" path="/openfile/taglib" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-pagegraph" path="/pagegraph" />
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-pages-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-pages-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-pages</artifactId><classifier>javadoc</classifier> -->
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-pages-unavailable" path="/pages/missing" />
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-resources-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-resources</artifactId><classifier>javadoc</classifier> -->
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-resources-empty" path="/resources/empty" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-resources-filesystem" path="/resources/filesystem" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-resources-unavailable" path="/resources/unavailable" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-resources-union" path="/resources/union" />
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-all</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-bom</artifactId><classifier>javadoc</classifier> -->
+                    <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-section</artifactId><classifier>javadoc</classifier> -->
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-section-model" path="/section/model" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-section-renderer-html" path="/section/renderer/html" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-section-servlet" path="/section/servlet" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-section-style" path="/section/style" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-section-taglib" path="/section/taglib" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-tag-reference" path="/tag-reference" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-theme-documentation" path="/theme-documentation" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-theme-documentation-style" path="/theme-documentation/style" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-view-all" path="/view-all" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-view-tree" path="/view-tree" />
+                    <create-javadoc-webresource groupId="com.semanticcms" artifactId="semanticcms-view-what-links-here" path="/view-what-links-here" />
+                  </target>
+                </configuration>
+              </execution>
+              <!-- Publishing version 1.x still:
               <execution>
                 <id>delete-tomcat-work</id><phase>deploy</phase><goals><goal>run</goal></goals>
                 <configuration>
@@ -654,9 +759,14 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
                   </target>
                 </configuration>
               </execution>
+              -->
             </executions>
+            <dependencies>
+              <dependency>
+                <groupId>org.apache.groovy</groupId><artifactId>groovy-ant</artifactId><version>4.0.13</version>
+              </dependency>
+            </dependencies>
           </plugin>
-          -->
         </plugins>
       </build>
       <dependencies>
