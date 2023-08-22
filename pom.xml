@@ -763,7 +763,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
             </executions>
             <dependencies>
               <dependency>
-                <groupId>org.apache.groovy</groupId><artifactId>groovy-ant</artifactId><version>4.0.13</version>
+                <groupId>org.apache.groovy</groupId><artifactId>groovy-ant</artifactId><version>4.0.14</version>
               </dependency>
             </dependencies>
           </plugin>
