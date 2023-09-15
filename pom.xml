@@ -592,12 +592,12 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
                           />
                           <zipfileset
                             src="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar"
-                            includes="META-INF/MANIFEST.MF"
+                            includes="META-INF/MANIFEST.MF,META-INF/sitemap-index.xml"
                           />
                           <zipfileset
                             src="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar"
                             prefix="META-INF/resources@{path}/apidocs"
-                            excludes="**/MANIFEST.MF"
+                            excludes="**/MANIFEST.MF,**/sitemap-index.xml"
                           />
                         </zip>
                       </sequential>
