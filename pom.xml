@@ -500,12 +500,12 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
                           />
                           <zipfileset
                             src="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar"
-                            includes="META-INF/MANIFEST.MF"
+                            includes="META-INF/MANIFEST.MF,META-INF/sitemap-index.xml"
                           />
                           <zipfileset
                             src="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar"
                             prefix="META-INF/resources@{path}/apidocs"
-                            excludes="**/MANIFEST.MF"
+                            excludes="**/MANIFEST.MF,**/sitemap-index.xml"
                           />
                         </zip>
                       </sequential>
@@ -708,7 +708,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
           <exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
         </dependency>
         <dependency>
-          <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId><version>1.14.2-POST-SNAPSHOT</version><classifier>javadoc</classifier>
+          <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId><version>1.15.0-SNAPSHOT</version><classifier>javadoc</classifier>
           <scope>provided</scope>
           <exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
         </dependency>
@@ -972,7 +972,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet-book</artifactId><version>1.18.4-POST-SNAPSHOT</version>
       </dependency>
       <dependency>
-        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap-book</artifactId><version>1.14.2-POST-SNAPSHOT</version>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap-book</artifactId><version>1.15.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style-book</artifactId><version>1.5.0-POST-SNAPSHOT</version>
@@ -1306,7 +1306,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-canonical</artifactId><version>1.3.0${POST-SNAPSHOT}</version>
       </dependency>
       <dependency>
-        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId><version>1.14.2${POST-SNAPSHOT}</version>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId><version>1.15.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
       </dependency>
       <dependency>
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style</artifactId><version>1.5.0${POST-SNAPSHOT}</version>
