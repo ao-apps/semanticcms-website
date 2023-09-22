@@ -36,6 +36,10 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
     <!-- Must be set to ${git.commit.time} for snapshots or ISO 8601 timestamp for releases. -->
     <project.build.outputTimestamp>${git.commit.time}</project.build.outputTimestamp>
     <module.name>com.semanticcms.website</module.name>
+
+    <!-- The Google Analytics 4 (GA4) Measurement ID for this site. -->
+    <google.analytics.trackingId>G-EVMVM30RQT</google.analytics.trackingId>
+
     <!-- Parallel deployment -->
     <!-- Unreliable with current hack: <maven.build.timestamp.format>yyyyMMdd.HHmmss</maven.build.timestamp.format> -->
     <!-- Never stage snapshot, see https://stackoverflow.com/a/39139979 -->
@@ -468,7 +472,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
               <execution>
                 <id>create-javadoc-webresources</id><phase>generate-resources</phase><goals><goal>run</goal></goals>
                 <configuration>
-                  <target>
+                  <target xmlns:if="ant:if">
                     <macrodef name="create-javadoc-webresource">
                       <attribute name="groupId"/>
                       <attribute name="artifactId"/>
@@ -510,6 +514,11 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
                             excludes="**/MANIFEST.MF,**/sitemap-index.xml"
                           />
                         </zip>
+                        <insert-google-analytics-tracking
+                          if:true="${build.isSnapshot}"
+                          file="${project.build.directory}/dependency/javadoc-webresources/WEB-INF/lib/@{artifactId}-${@{groupId}:@{artifactId}:jar:javadoc.version}-javadoc-webresource.jar"
+                          googleAnalyticsTrackingId="${google.analytics.trackingId}"
+                        />
                       </sequential>
                     </macrodef>
                     <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-all</artifactId><classifier>javadoc</classifier> -->
