@@ -1055,7 +1055,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-all-book</artifactId><version>1.8.0-POST-SNAPSHOT</version>
       </dependency>
       <dependency>
-        <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-bom-book</artifactId><version>1.8.0-SNAPSHOT</version>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-bom-book</artifactId><version>1.8.0-POST-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-book</artifactId><version>1.8.0-SNAPSHOT</version>
