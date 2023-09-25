@@ -1073,7 +1073,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-style-book</artifactId><version>1.4.1-POST-SNAPSHOT</version>
       </dependency>
       <dependency>
-        <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-taglib-book</artifactId><version>1.7.0-SNAPSHOT</version>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-taglib-book</artifactId><version>1.7.0-POST-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-news-view-book</artifactId><version>1.6.0-SNAPSHOT</version>
