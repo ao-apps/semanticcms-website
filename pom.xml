@@ -29,12 +29,12 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
     <relativePath>../parent/pom.xml</relativePath>
   </parent>
 
-  <groupId>com.semanticcms</groupId><artifactId>website</artifactId><version>1.15.0-SNAPSHOT</version>
+  <groupId>com.semanticcms</groupId><artifactId>website</artifactId><version>1.15.0</version>
   <packaging>war</packaging>
 
   <properties>
     <!-- Must be set to ${git.commit.time} for snapshots or ISO 8601 timestamp for releases. -->
-    <project.build.outputTimestamp>${git.commit.time}</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2023-09-25T08:58:44Z</project.build.outputTimestamp>
     <module.name>com.semanticcms.website</module.name>
 
     <!-- The Google Analytics 4 (GA4) Measurement ID for this site. -->
@@ -85,7 +85,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
     <connection>scm:git:git://github.com/ao-apps/semanticcms-website.git</connection>
     <developerConnection>scm:git:git@github.com:ao-apps/semanticcms-website.git</developerConnection>
     <url>https://github.com/ao-apps/semanticcms-website</url>
-    <tag>HEAD</tag>
+    <tag>website-1.15.0</tag>
   </scm>
 
   <issueManagement>
@@ -474,9 +474,9 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
                 <configuration>
                   <target xmlns:if="ant:if">
                     <macrodef name="create-javadoc-webresource">
-                      <attribute name="groupId"/>
-                      <attribute name="artifactId"/>
-                      <attribute name="path"/>
+                      <attribute name="groupId" />
+                      <attribute name="artifactId" />
+                      <attribute name="path" />
                       <sequential>
                         <!--
                           As a requirement for reproducible builds, much care is taken to use the original timestamp
@@ -488,37 +488,13 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
                         -->
                         <!-- Create ZIP directories to patch into new ZIP -->
                         <taskdef resource="com/aoapps/ant/tasks/antlib.xml" />
-                        <create-zipped-directories
-                          referenceZip="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar"
-                          referencePath="META-INF/"
-                          generateZip="${project.build.directory}/create-javadoc-webresource/@{artifactId}-new-directories.zip"
-                          generatePath="META-INF/resources@{path}/apidocs/"
-                        />
-                        <zip
-                          destfile="${project.build.directory}/dependency/javadoc-webresources/WEB-INF/lib/@{artifactId}-${@{groupId}:@{artifactId}:jar:javadoc.version}-javadoc-webresource.jar"
-                          keepcompression="true"
-                          encoding="UTF8"
-                          whenempty="fail"
-                          duplicate="fail"
-                        >
-                          <zipfileset
-                            src="${project.build.directory}/create-javadoc-webresource/@{artifactId}-new-directories.zip"
-                          />
-                          <zipfileset
-                            src="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar"
-                            includes="META-INF/MANIFEST.MF,META-INF/sitemap-index.xml"
-                          />
-                          <zipfileset
-                            src="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar"
-                            prefix="META-INF/resources@{path}/apidocs"
-                            excludes="**/MANIFEST.MF,**/sitemap-index.xml"
-                          />
+                        <create-zipped-directories referenceZip="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar" referencePath="META-INF/" generateZip="${project.build.directory}/create-javadoc-webresource/@{artifactId}-new-directories.zip" generatePath="META-INF/resources@{path}/apidocs/" />
+                        <zip destfile="${project.build.directory}/dependency/javadoc-webresources/WEB-INF/lib/@{artifactId}-${@{groupId}:@{artifactId}:jar:javadoc.version}-javadoc-webresource.jar" keepcompression="true" encoding="UTF8" whenempty="fail" duplicate="fail">
+                          <zipfileset src="${project.build.directory}/create-javadoc-webresource/@{artifactId}-new-directories.zip" />
+                          <zipfileset src="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar" includes="META-INF/MANIFEST.MF,META-INF/sitemap-index.xml" />
+                          <zipfileset src="${project.build.directory}/dependency/copy.javadocs/@{artifactId}-javadoc.jar" prefix="META-INF/resources@{path}/apidocs" excludes="**/MANIFEST.MF,**/sitemap-index.xml" />
                         </zip>
-                        <insert-google-analytics-tracking
-                          if:true="${build.isSnapshot}"
-                          file="${project.build.directory}/dependency/javadoc-webresources/WEB-INF/lib/@{artifactId}-${@{groupId}:@{artifactId}:jar:javadoc.version}-javadoc-webresource.jar"
-                          googleAnalyticsTrackingId="${google.analytics.trackingId}"
-                        />
+                        <insert-google-analytics-tracking if:true="${build.isSnapshot}" file="${project.build.directory}/dependency/javadoc-webresources/WEB-INF/lib/@{artifactId}-${@{groupId}:@{artifactId}:jar:javadoc.version}-javadoc-webresource.jar" googleAnalyticsTrackingId="${google.analytics.trackingId}" />
                       </sequential>
                     </macrodef>
                     <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-all</artifactId><classifier>javadoc</classifier> -->
@@ -603,7 +579,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
                     <exec executable="${publish-semanticcms.com-ssh-path}" failonerror="true">
                       <arg value="-oControlPath=none" />
                       <arg value="-T" />
-                      <arg value="${publish-semanticcms.com-tomcat-username}@${publish-semanticcms.com-tomcat-hostname}"/>
+                      <arg value="${publish-semanticcms.com-tomcat-username}@${publish-semanticcms.com-tomcat-hostname}" />
                       <arg value="bash -c 'if [ -d &quot;$1&quot; ] ; then find &quot;$1&quot; &quot;(&quot; -name &quot;*.java&quot; -or -name &quot;*.class&quot; &quot;)&quot; -delete ; fi' delete-tomcat-work '${publish-semanticcms.com-tomcat-work}'" />
                     </exec>
                   </target>
@@ -623,31 +599,13 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
                   <target>
                     <mkdir dir="${project.build.directory}/warmup-get-url" />
                     <retry retrycount="12" retrydelay="15000">
-                      <get
-                        retries="1"
-                        src="${publish-semanticcms.com-warmup-get-url}"
-                        dest="${project.build.directory}/warmup-get-url/response"
-                        maxtime="120"
-                        httpusecaches="false"
-                      />
+                      <get retries="1" src="${publish-semanticcms.com-warmup-get-url}" dest="${project.build.directory}/warmup-get-url/response" maxtime="120" httpusecaches="false" />
                     </retry>
                     <retry retrycount="12" retrydelay="15000">
-                      <get
-                        retries="1"
-                        src="${publish-semanticcms.com-warmup-get-url.2}"
-                        dest="${project.build.directory}/warmup-get-url/response.2"
-                        maxtime="120"
-                        httpusecaches="false"
-                      />
+                      <get retries="1" src="${publish-semanticcms.com-warmup-get-url.2}" dest="${project.build.directory}/warmup-get-url/response.2" maxtime="120" httpusecaches="false" />
                     </retry>
                     <retry retrycount="12" retrydelay="15000">
-                      <get
-                        retries="1"
-                        src="${publish-semanticcms.com-warmup-get-url.3}"
-                        dest="${project.build.directory}/warmup-get-url/response.3"
-                        maxtime="120"
-                        httpusecaches="false"
-                      />
+                      <get retries="1" src="${publish-semanticcms.com-warmup-get-url.3}" dest="${project.build.directory}/warmup-get-url/response.3" maxtime="120" httpusecaches="false" />
                     </retry>
                   </target>
                 </configuration>
