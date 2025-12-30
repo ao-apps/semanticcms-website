@@ -1559,9 +1559,6 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
         <scope>provided</scope>
       </dependency>
       <dependency>
-        <groupId>joda-time</groupId><artifactId>joda-time</artifactId><version>2.14.0</version>
-      </dependency>
-      <dependency>
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId><version>3.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
       </dependency>
       <dependency>
