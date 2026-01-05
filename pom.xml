@@ -445,7 +445,6 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
               </webResources>
             </configuration>
           </plugin>
-          <!-- Publishing version javaee still:
           <plugin>
             <groupId>org.apache.tomcat.maven</groupId><artifactId>tomcat7-maven-plugin</artifactId>
             <executions>
@@ -457,12 +456,11 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
                   <path>${publish.tomcat7-maven-plugin.path}</path>
                   <update>${publish.tomcat7-maven-plugin.update}</update>
                   <url>${tomcat7-maven-plugin-semanticcms.com}</url>
-                  <!- - TODO: How to fail build when deploy failed with "FAIL - Failed to deploy application at context path"? - ->
+                  <!-- TODO: How to fail build when deploy failed with "FAIL - Failed to deploy application at context path"? -->
                 </configuration>
               </execution>
             </executions>
           </plugin>
-          -->
           <plugin>
             <groupId>org.apache.maven.plugins</groupId><artifactId>maven-antrun-plugin</artifactId>
             <executions>
@@ -568,7 +566,6 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
                   </target>
                 </configuration>
               </execution>
-              <!-- Publishing version javaee still:
               <execution>
                 <id>delete-tomcat-work</id><phase>${publish.delete-tomcat-work.phase}</phase><goals><goal>run</goal></goals>
                 <configuration>
@@ -608,7 +605,6 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
                   </target>
                 </configuration>
               </execution>
-              -->
             </executions>
           </plugin>
         </plugins>
