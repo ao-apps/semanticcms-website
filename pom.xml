@@ -126,6 +126,8 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId>
         <configuration>
           <usedDependencies>
+            <!-- JSP Only -->
+            <dependency>com.aoapps:ao-taglib</dependency>
             <!-- Required for module-info.java -->
             <dependency>com.semanticcms:semanticcms-core-all</dependency>
             <dependency>com.semanticcms:semanticcms-news-all</dependency>
@@ -135,11 +137,6 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
             <!-- Books -->
             <dependency>com.semanticcms:*-book:jar</dependency>
           </ignoredUnusedDeclaredDependencies>
-          <ignoredDependencies>
-            <!-- No "module-info.java" in some release builds -->
-            <dependency>com.aoapps:ao-collections</dependency>
-            <dependency>com.aoapps:ao-taglib</dependency>
-          </ignoredDependencies>
         </configuration>
       </plugin>
       <plugin>
