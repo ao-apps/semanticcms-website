@@ -45,10 +45,8 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
     <!-- Require secure session cookies in production -->
     <session.cookie.secure>true</session.cookie.secure>
     <!-- Default publish settings -->
-    <publish.tomcat7-maven-plugin.path>/</publish.tomcat7-maven-plugin.path>
-    <publish.tomcat7-maven-plugin.update>true</publish.tomcat7-maven-plugin.update>
-    <publish.delete-tomcat-work.phase>deploy</publish.delete-tomcat-work.phase>
-    <publish-semanticcms.com-ssh-path>/usr/bin/ssh</publish-semanticcms.com-ssh-path>
+    <publish.tomcat7-maven-plugin.parallel.deployment.version>${user.name}-${current.datetime}</publish.tomcat7-maven-plugin.parallel.deployment.version>
+    <publish-semanticcms.com-GetParallelDeploymentVersion-url>https://semanticcms.com/ao-servlet-util/tomcat/GetParallelDeploymentVersion</publish-semanticcms.com-GetParallelDeploymentVersion-url>
     <publish-semanticcms.com-warmup-get-url>https://semanticcms.com/</publish-semanticcms.com-warmup-get-url>
     <publish-semanticcms.com-warmup-get-url.2>https://semanticcms.com/sitemap-index.xml</publish-semanticcms.com-warmup-get-url.2>
     <publish-semanticcms.com-warmup-get-url.3>https://semanticcms.com/?view=news</publish-semanticcms.com-warmup-get-url.3>
@@ -123,6 +121,20 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
   <build>
     <plugins>
       <plugin>
+        <groupId>org.codehaus.mojo</groupId><artifactId>build-helper-maven-plugin</artifactId>
+        <executions>
+          <!-- Make the components of the current version available as parsedVersion.* properties -->
+          <execution>
+            <id>current.datetime</id><goals><goal>timestamp-property</goal></goals>
+            <configuration>
+              <name>current.datetime</name>
+              <locale>en_US</locale>
+              <pattern>yyyyMMdd-HHmmss</pattern>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
         <groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId>
         <configuration>
           <usedDependencies>
@@ -193,12 +205,8 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
     <profile>
       <id>jenkins</id>
       <properties>
-        <!-- Parallel deployment -->
-        <!-- Note: Tomcat server.xml/Host/autoDeploy must be set to "true" -->
-        <!-- Note: Tomcat server.xml/Host/undeployOldVersions must be set to "true" to clean-up old versions -->
-        <publish.tomcat7-maven-plugin.path>/ROOT##build-${jenkins.buildNumber}</publish.tomcat7-maven-plugin.path>
-        <publish.tomcat7-maven-plugin.update>false</publish.tomcat7-maven-plugin.update>
-        <publish.delete-tomcat-work.phase>none</publish.delete-tomcat-work.phase>
+        <!-- Use Jenkins build number -->
+        <publish.tomcat7-maven-plugin.parallel.deployment.version>build-${jenkins.buildNumber}</publish.tomcat7-maven-plugin.parallel.deployment.version>
       </properties>
     </profile>
     <profile>
@@ -451,10 +459,12 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
                 <configuration>
                   <charset>UTF-8</charset>
                   <server>tomcat7-maven-plugin-semanticcms.com</server>
-                  <path>${publish.tomcat7-maven-plugin.path}</path>
-                  <update>${publish.tomcat7-maven-plugin.update}</update>
+                  <!- - Parallel deployment - ->
+                  <!- - Note: Tomcat server.xml/Host/autoDeploy must be set to "true" - ->
+                  <!- - Note: Tomcat server.xml/Host/undeployOldVersions must be set to "true" to clean-up old versions - ->
+                  <path>/ROOT##${publish.tomcat7-maven-plugin.parallel.deployment.version}</path>
+                  <update>false</update>
                   <url>${tomcat7-maven-plugin-semanticcms.com}</url>
-                  <!- - TODO: How to fail build when deploy failed with "FAIL - Failed to deploy application at context path"? - ->
                 </configuration>
               </execution>
             </executions>
@@ -567,24 +577,32 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
               </execution>
               <!-- Publishing version 2.x (Jakarta EE):
               <execution>
-                <id>delete-tomcat-work</id><phase>${publish.delete-tomcat-work.phase}</phase><goals><goal>run</goal></goals>
-                <configuration>
-                  <target>
-                    <sleep seconds="1" />
-                    <exec executable="${publish-semanticcms.com-ssh-path}" failonerror="true">
-                      <arg value="-oControlPath=none" />
-                      <arg value="-T" />
-                      <arg value="${publish-semanticcms.com-tomcat-username}@${publish-semanticcms.com-tomcat-hostname}" />
-                      <arg value="bash -c 'if [ -d &quot;$1&quot; ] ; then find &quot;$1&quot; &quot;(&quot; -name &quot;*.java&quot; -or -name &quot;*.class&quot; &quot;)&quot; -delete ; fi' delete-tomcat-work '${publish-semanticcms.com-tomcat-work}'" />
-                    </exec>
-                  </target>
-                </configuration>
-              </execution>
-              <execution>
                 <id>warmup-sleep</id><phase>deploy</phase><goals><goal>run</goal></goals>
                 <configuration>
                   <target>
                     <sleep seconds="10" />
+                  </target>
+                </configuration>
+              </execution>
+              <execution>
+                <id>verify-parallel-deployment-version</id><phase>deploy</phase><goals><goal>run</goal></goals>
+                <configuration>
+                  <target>
+                    <mkdir dir="${project.build.directory}/verify-parallel-deployment-version" />
+                    <retry retrycount="12" retrydelay="15000">
+                      <sequential>
+                        <local name="parallel-deployment-version" />
+                        <get retries="1" src="${publish-semanticcms.com-GetParallelDeploymentVersion-url}" dest="${project.build.directory}/verify-parallel-deployment-version/GetParallelDeploymentVersion" maxtime="120" httpusecaches="false" />
+                        <loadfile property="parallel-deployment-version" srcFile="${project.build.directory}/verify-parallel-deployment-version/GetParallelDeploymentVersion" />
+                        <condition property="parallel-deployment-version.matches">
+                          <equals arg1="${parallel-deployment-version}" arg2="${publish.tomcat7-maven-plugin.parallel.deployment.version}" />
+                        </condition>
+                        <fail
+                          message="Parallel deployment version mismatch.  Expected ${publish.tomcat7-maven-plugin.parallel.deployment.version}, got ${parallel-deployment-version}."
+                          unless="parallel-deployment-version.matches"
+                        />
+                      </sequential>
+                    </retry>
                   </target>
                 </configuration>
               </execution>
