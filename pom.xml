@@ -51,6 +51,9 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
     <publish-semanticcms.com-warmup-get-url>https://semanticcms.com/</publish-semanticcms.com-warmup-get-url>
     <publish-semanticcms.com-warmup-get-url.2>https://semanticcms.com/sitemap-index.xml</publish-semanticcms.com-warmup-get-url.2>
     <publish-semanticcms.com-warmup-get-url.3>https://semanticcms.com/?view=news</publish-semanticcms.com-warmup-get-url.3>
+
+    <!-- Plugins -->
+    <org.codehaus.gmaven.groovy-maven-plugin.version>2.1.1</org.codehaus.gmaven.groovy-maven-plugin.version>
   </properties>
 
   <name>semanticcms.com</name>
@@ -214,6 +217,22 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
       <id>publish</id>
       <build>
         <plugins>
+          <plugin>
+            <groupId>org.codehaus.gmaven</groupId><artifactId>groovy-maven-plugin</artifactId><version>${org.codehaus.gmaven.groovy-maven-plugin.version}</version>
+            <executions>
+              <!-- See https://stackoverflow.com/a/11239913 -->
+              <execution>
+                <id>get-tomcatManager-auth-from-settings</id><phase>validate</phase><goals><goal>execute</goal></goals>
+                <configuration>
+                  <source>
+                    def server = settings.servers.find{ it.id.equals('tomcat7-maven-plugin-semanticcms.com') }
+                    project.properties.tomcatManagerUsername = server.username
+                    project.properties.tomcatManagerPassword = server.password
+                  </source>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId>
             <executions>
@@ -595,6 +614,8 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
                         <local name="parallel-deployment-version" />
                         <get
                           retries="1"
+                          username="${tomcatManagerUsername}"
+                          password="${tomcatManagerPassword}"
                           src="${publish-semanticcms.com-GetParallelDeploymentVersion-url}"
                           dest="${project.build.directory}/verify-parallel-deployment-version/GetParallelDeploymentVersion"
                           maxtime="120"
@@ -626,6 +647,8 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
                         <local name="war-file-fingerprint" />
                         <get
                           retries="1"
+                          username="${tomcatManagerUsername}"
+                          password="${tomcatManagerPassword}"
                           src="${publish-semanticcms.com-GetWarFileFingerprint-url}"
                           dest="${project.build.directory}/verify-war-file-fingerprint/GetWarFileFingerprint"
                           maxtime="120"
