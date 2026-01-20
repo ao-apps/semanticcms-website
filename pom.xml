@@ -1193,9 +1193,6 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>com.aoapps</groupId><artifactId>ao-servlet-subrequest</artifactId><version>2.0.0${POST-SNAPSHOT}</version>
       </dependency>
       <dependency>
-        <groupId>com.aoapps</groupId><artifactId>ao-servlet-util</artifactId><version>5.4.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-      </dependency>
-      <dependency>
         <groupId>com.aoapps</groupId><artifactId>ao-style</artifactId><version>2.0.1${POST-SNAPSHOT}</version>
       </dependency>
       <dependency>
@@ -1274,6 +1271,9 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
       </dependency>
       <dependency>
         <groupId>com.aoapps</groupId><artifactId>ao-servlet-filter</artifactId><version>3.1.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-servlet-util</artifactId><version>5.4.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
       </dependency>
       <dependency>
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-google-analytics</artifactId><version>1.3.1${POST-SNAPSHOT}</version>
@@ -1602,6 +1602,10 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
     </dependency>
     <dependency>
       <groupId>com.aoapps</groupId><artifactId>ao-servlet-filter</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.aoapps</groupId><artifactId>ao-servlet-util</artifactId>
       <scope>runtime</scope>
     </dependency>
     <dependency>
