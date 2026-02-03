@@ -727,7 +727,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
         <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-bom</artifactId><classifier>javadoc</classifier> -->
         <!-- No apidocs: <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile</artifactId><classifier>javadoc</classifier> -->
         <dependency>
-          <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-servlet</artifactId><version>1.22.0-SNAPSHOT</version><classifier>javadoc</classifier>
+          <groupId>com.semanticcms</groupId><artifactId>semanticcms-openfile-servlet</artifactId><version>1.22.0-POST-SNAPSHOT</version><classifier>javadoc</classifier>
           <scope>provided</scope>
           <exclusions><exclusion><groupId>*</groupId><artifactId>*</artifactId></exclusion></exclusions>
         </dependency>
