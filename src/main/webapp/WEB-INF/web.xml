@@ -27,7 +27,7 @@ along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
   version="3.1"
   metadata-complete="false">
-    <display-name>@{project.name} @{project.version}</display-name>
+  <display-name>@{project.name} @{project.version}</display-name>
   <description>@{project.description}</description>
 
   <context-param>
