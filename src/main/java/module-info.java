@@ -21,7 +21,11 @@
  * along with semanticcms-website.  If not, see <https://www.gnu.org/licenses/>.
  */
 module com.semanticcms.website {
+  exports com.semanticcms.website;
+  // Direct
+  requires com.aoapps.servlet.util; // <groupId>com.aoapps</groupId><artifactId>ao-servlet-util</artifactId>
   requires com.aoapps.taglib; // <groupId>com.aoapps</groupId><artifactId>ao-taglib</artifactId>
+  requires javax.servlet.api; // <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId>
   requires com.semanticcms.all.book; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-all-book</artifactId>
   requires com.semanticcms.autogit.all.book; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-all-book</artifactId>
   requires com.semanticcms.autogit.bom.book; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-bom-book</artifactId>

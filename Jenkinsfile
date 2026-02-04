@@ -110,6 +110,7 @@ def upstreamProjects = [
 
   // Direct
   '../oss/taglib', // <groupId>com.aoapps</groupId><artifactId>ao-taglib</artifactId>
+  // No Jenkins: <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId>
   'all-book', // <groupId>com.semanticcms</groupId><artifactId>semanticcms-all-book</artifactId>
   'autogit/all-book', // <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-all-book</artifactId>
   'autogit/bom-book', // <groupId>com.semanticcms</groupId><artifactId>semanticcms-autogit-bom-book</artifactId>
